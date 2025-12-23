@@ -1,0 +1,233 @@
+table HILL_PBI_BARN_LAYOUT
+	lineageTag: 70384df4-0de3-4a3d-b1e5-0b70f186994f
+
+	column Company
+		dataType: string
+		lineageTag: 5cc41a21-13fd-48fe-a505-ed1cc261f078
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Farm No_'
+		dataType: string
+		lineageTag: eaf24108-8fe0-422b-a3ae-99fd737ee040
+		summarizeBy: none
+		sourceColumn: Farm No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Barn Code'
+		dataType: string
+		lineageTag: c211dc34-f5f2-4e4a-9eba-3e28f453f026
+		summarizeBy: none
+		sourceColumn: Barn Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		lineageTag: de4d0c0c-3904-4dac-9759-1cec1173e73b
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 4fd74202-fe35-4cf3-a80a-5bf4e3110420
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No_ Of Housing Units'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6db88f1b-ab44-441a-86a9-d03c3c93a241
+		summarizeBy: sum
+		sourceColumn: No_ Of Housing Units
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Housing Unit Length'
+		dataType: double
+		lineageTag: c5066ac5-540f-4609-a59f-24a29ba4f35c
+		summarizeBy: sum
+		sourceColumn: Housing Unit Length
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Housing Unit Width'
+		dataType: double
+		lineageTag: 87148a6a-5f28-4e9d-81b4-b2552072706a
+		summarizeBy: sum
+		sourceColumn: Housing Unit Width
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Housing Unit Height'
+		dataType: double
+		lineageTag: 855a8bfb-6331-4d0f-98cf-70af128c6fa5
+		summarizeBy: sum
+		sourceColumn: Housing Unit Height
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Def_ Animals per Housing Unit'
+		dataType: double
+		lineageTag: 45fe088d-f674-44ec-8a28-936e613a6a46
+		summarizeBy: sum
+		sourceColumn: Def_ Animals per Housing Unit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Housing Unit Floor Surface'
+		dataType: double
+		lineageTag: 85097fef-41ad-4e64-ad6f-b41af915f355
+		summarizeBy: sum
+		sourceColumn: Housing Unit Floor Surface
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Tot_ Housing Unit Floor Surf_'
+		dataType: double
+		lineageTag: 696f2657-2eeb-4d75-85af-db575d250293
+		summarizeBy: sum
+		sourceColumn: Tot_ Housing Unit Floor Surf_
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Capacity
+		dataType: double
+		lineageTag: 3f605420-c4b7-4205-8372-00c4bbcf5889
+		summarizeBy: sum
+		sourceColumn: Capacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Row Code'
+		dataType: string
+		lineageTag: 60823717-dca9-4584-9a33-f443919afab6
+		summarizeBy: none
+		sourceColumn: Row Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tier Code'
+		dataType: string
+		lineageTag: 2b3015ea-28c8-4edf-bfe7-da067c6f7b90
+		summarizeBy: none
+		sourceColumn: Tier Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Side Code'
+		dataType: string
+		lineageTag: ae886f39-5d8d-41a4-b0d8-0570fa0d6ad5
+		summarizeBy: none
+		sourceColumn: Side Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location Code'
+		dataType: string
+		lineageTag: 8736af2e-ed18-416b-bef8-e8404a540ede
+		summarizeBy: none
+		sourceColumn: Location Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bin Code'
+		dataType: string
+		lineageTag: 247cca0d-7448-41b2-b368-44beeee0d134
+		summarizeBy: none
+		sourceColumn: Bin Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemId
+		dataType: string
+		lineageTag: 2f2cd3d8-08d3-439f-ac3d-f9a2e56a7ab1
+		summarizeBy: none
+		sourceColumn: $systemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8a40271e-5fae-470e-bfe8-9316ea5507b5
+		summarizeBy: none
+		sourceColumn: $systemCreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedBy
+		dataType: string
+		lineageTag: 327612cb-c5c8-482f-81f0-145a6573bc00
+		summarizeBy: none
+		sourceColumn: $systemCreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0072b8c3-7a9c-43f4-b2fc-16216afc212a
+		summarizeBy: none
+		sourceColumn: $systemModifiedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedBy
+		dataType: string
+		lineageTag: bdc4f82f-49a6-4020-b93d-4acbd03c8f9e
+		summarizeBy: none
+		sourceColumn: $systemModifiedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_LAYOUT =
+			
+			HILL_PBI_BARN_LAYOUT[Company] &"_"& HILL_PBI_BARN_LAYOUT[Farm No_] &"_"& HILL_PBI_BARN_LAYOUT[Barn Code]
+		lineageTag: e2543c4f-9f14-4e65-8306-887be0ca37ee
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_COD
+		dataType: string
+		lineageTag: 5358a5f9-5ea8-4bd8-a4c0-df9ab295214b
+		summarizeBy: none
+		sourceColumn: ID_COD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HILL_PBI_BARN_LAYOUT = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select * from HILL_PBI_BARN_LAYOUT", CommandTimeout=#duration(0, 2, 0, 0)]),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(Fonte, "ID_COD", each Text.Combine({[Company], [Farm No_], [Barn Code]}, "_"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

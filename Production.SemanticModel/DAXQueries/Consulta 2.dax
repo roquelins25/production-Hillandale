@@ -1,0 +1,20 @@
+EVALUATE
+FILTER(
+    ADDCOLUMNS(
+        SUMMARIZECOLUMNS(
+            HILL_PBI_FLOCK_STD[Flock No_],
+            HILL_PBI_FLOCK_STD[Week of Life],
+            HILL_PBI_FLOCK_STD[Week Day]
+        ),
+        "@Mort",
+            CALCULATE(
+                SUM(HILL_PBI_FLOCK_ENTRY[Quantity]),
+                HILL_PBI_FLOCK_ENTRY[OVO Activity Code] = "MORT_HENS",
+                HILL_PBI_FLOCK_STD[Week Day] <> 8,
+                TREATAS(
+                    VALUES(HILL_PBI_FLOCK_STD[Production Date]),
+                    HILL_PBI_FLOCK_ENTRY[Posting Date]
+                )
+            )
+    )
+		, HILL_PBI_FLOCK_STD[Flock No_] = "ATL000311")

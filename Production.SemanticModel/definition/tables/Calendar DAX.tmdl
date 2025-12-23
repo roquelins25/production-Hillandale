@@ -1,0 +1,173 @@
+table 'Calendar DAX'
+	lineageTag: 912e7b74-d360-4e98-91f5-3cdfc6e83a4c
+
+	column Date
+		formatString: General Date
+		lineageTag: 71e7804b-3676-4540-9142-5492e1a1cc06
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 6520af64-330c-4a50-8d7f-450e301b09f2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		formatString: 0
+		lineageTag: 8b53b1cc-99f7-4292-9e55-e5346fd93369
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Name Month'
+		lineageTag: 0997ac99-ffe9-4ef9-852c-ee2f955013b4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Name Month]
+		sortByColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Ab'
+		lineageTag: 2877f9aa-2b29-4aef-8c9d-5ce68ed391ea
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Ab]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 61820869-80d1-4e55-b559-146e5a431adc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semesters
+		lineageTag: cb80e233-e1d6-4a28-b5be-abc2db30f009
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Semesters]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		formatString: 0
+		lineageTag: bace029f-a63d-4580-b193-9669806af511
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day/Month
+		lineageTag: 5aa77041-00d7-4355-866d-d3fdaf02400d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day/Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day/Week
+		lineageTag: 4e304d59-1011-449f-857b-0c862fd0efb4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day/Week]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Current'
+		lineageTag: 47faefa6-699a-4a6e-bb32-3e83b904128a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Current]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Org.Year-Month'
+		formatString: 0
+		lineageTag: c46556e3-d3ab-4229-a30f-5c7a3b885b7f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Org.Year-Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month
+		lineageTag: 01998a91-204f-4dda-8ba9-4b4bfc050a09
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year-Month]
+		sortByColumn: 'Org.Year-Month'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year_
+		lineageTag: 7091f09d-4120-44b0-8874-ba4c044495c7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year_]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthInic
+		lineageTag: f8373369-7083-4749-ad80-1c3285860d68
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthInic]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Calendar DAX' = calculated
+		mode: import
+		source = ```
+				
+				var minAno = YEAR(MIN(HILL_PBI_FLOCK_STD_Day[Production Date]))
+				var MaxAno = YEAR(MAX(HILL_PBI_FLOCK_STD_Day[Production Date]))
+				return
+				ADDCOLUMNS(
+				    FILTER(
+				        CALENDARAUTO(),
+				        YEAR([Date]) >= minAno &&
+				        YEAR([Date]) <= MaxAno),
+				        "Year", YEAR([Date]),
+				        "Month", MONTH([Date]),
+				        "Name Month", FORMAT([Date],"mmmm","en-US"),
+				        "Month Ab",UPPER(LEFT(FORMAT([Date], "mmm","en-US"), 1)) & LOWER(RIGHT(FORMAT([Date], "mmm","en-US"), 2)),
+				        "Quarter", CONCATENATE(QUARTER([Date]),"-Quarter"),
+				        "Semesters", SWITCH(
+				                        TRUE(),
+				                        MONTH([Date]) IN{1,2,3,4,5,6}, "1-Sem",
+				                        "2-Sem"),
+				        "Day",DAY([Date]),
+				        "Day/Month",  FORMAT([Date],"dd-mmm","en-US") ,
+				        "Day/Week",SWITCH(
+				            WEEKDAY([Date]),
+				            1,"Sunday",
+				            2,"Monday",
+				            3,"Tuesday",
+				            4,"Wednesday",
+				            5,"Thursday",
+				            6,"Friday",
+				            7,"Saturday"),
+				        "Month Current", IF( YEAR( [Date] ) = YEAR( TODAY() ) && MONTH( [Date] ) = MONTH( TODAY() ), "S", "N" ),
+				        "Org.Year-Month", YEAR( [Date] ) * 100 + MONTH( [Date] ),
+				        "Year-Month", UPPER(LEFT(FORMAT([Date], "mmm","en-US"), 1)) & LOWER(RIGHT(FORMAT([Date], "mmm","en-US"), 2)) & "-" & YEAR( [Date] ),
+				        "Year_",FORMAT( YEAR( [Date] ), "" ),
+				        "MonthInic", REPT(UNICHAR(8203),12-MONTH([Date])) & UPPER(LEFT(FORMAT([Date], "mmm","en-US"), 1))
+				        )
+				
+				```
+
+	annotation PBI_Id = fcd8eea113a448e38c3f6d0c3c252ece
+

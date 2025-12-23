@@ -1,0 +1,363 @@
+table HILL_PBI_STRAIN_STD
+	lineageTag: b9c90c0c-8a44-497a-8253-ec18c7828b2f
+
+	column Company
+		dataType: string
+		lineageTag: 7c08834e-d368-4d71-9766-55aeadd08d46
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain Code'
+		dataType: string
+		lineageTag: 99fd8603-7fb5-4f39-b7ec-c6a1ab135367
+		summarizeBy: none
+		sourceColumn: Strain Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Version Code'
+		dataType: string
+		lineageTag: 4fd20388-b50d-4268-9271-4b90267b1f9d
+		summarizeBy: none
+		sourceColumn: Version Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week of Life'
+		dataType: int64
+		formatString: 0
+		lineageTag: 366f1efa-7f5e-41f4-ac60-acf266e5767d
+		summarizeBy: sum
+		sourceColumn: Week of Life
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Day'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2db3a589-b1b2-4a37-af95-ee2c8d890441
+		summarizeBy: sum
+		sourceColumn: Week Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Percentage Layers'
+		dataType: double
+		lineageTag: 124548cc-6da6-431a-9dfa-d4875a9784f7
+		summarizeBy: sum
+		sourceColumn: Percentage Layers
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Feed Consumption Animal (F)'
+		dataType: double
+		lineageTag: c8dc8bef-e7a7-4212-a6e6-2ffdba5edbd6
+		summarizeBy: sum
+		sourceColumn: Feed Consumption Animal (F)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Body Weight Animal (F)'
+		dataType: double
+		lineageTag: 28cb3835-7849-4e7d-8880-a3e65b0846ad
+		summarizeBy: sum
+		sourceColumn: Body Weight Animal (F)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Qty_ Eggs per Female'
+		dataType: double
+		lineageTag: 2577c4b3-6c2e-470f-a845-47b90a0e4c54
+		summarizeBy: sum
+		sourceColumn: Qty_ Eggs per Female
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Mortality Percentage Female'
+		dataType: double
+		lineageTag: 22ea6cd8-6cb8-4b01-b1da-d37a281ecdd4
+		summarizeBy: sum
+		sourceColumn: Mortality Percentage Female
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Water Consumption'
+		dataType: double
+		lineageTag: 0dc656d2-6f23-4433-9e25-721ce5ddf904
+		summarizeBy: sum
+		sourceColumn: Water Consumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Hours Light'
+		dataType: double
+		lineageTag: 3c2768d2-6f7e-49d6-a42f-008ede345267
+		summarizeBy: sum
+		sourceColumn: Hours Light
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Average Weight Egg'
+		dataType: double
+		lineageTag: 32ed70b0-ffa8-44fb-92bd-57d70856bab5
+		summarizeBy: sum
+		sourceColumn: Average Weight Egg
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Feed Item No_'
+		dataType: string
+		lineageTag: 7354b725-c013-4814-873d-fbfec93c77c5
+		summarizeBy: none
+		sourceColumn: Feed Item No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Feed Consumption Animal (M)'
+		dataType: double
+		lineageTag: 102ff3f2-aa31-4a3e-bbb8-44b67b9bae35
+		summarizeBy: sum
+		sourceColumn: Feed Consumption Animal (M)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Body Weight Animal (M)'
+		dataType: double
+		lineageTag: 09cf3d41-180d-4782-a703-785ba469c52f
+		summarizeBy: sum
+		sourceColumn: Body Weight Animal (M)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Mortality Percentage Male'
+		dataType: double
+		lineageTag: d1e36956-9dc9-4d41-8f81-1a838e2e7ed4
+		summarizeBy: sum
+		sourceColumn: Mortality Percentage Male
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Fertile _'
+		dataType: double
+		lineageTag: 5d52ebeb-f20f-4a43-9e64-22be4e2f977c
+		summarizeBy: sum
+		sourceColumn: Fertile _
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Hatch of Fertile _'
+		dataType: double
+		lineageTag: c1392d14-640a-4f41-92ba-f5e8e4f00997
+		summarizeBy: sum
+		sourceColumn: Hatch of Fertile _
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Culls _'
+		dataType: double
+		lineageTag: 28090832-f493-4c1d-93a2-0c48fa9dbbc6
+		summarizeBy: sum
+		sourceColumn: Culls _
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Level
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c309752-ad57-43fd-9f51-77e36ee34377
+		summarizeBy: sum
+		sourceColumn: Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column Visible
+		dataType: int64
+		formatString: 0
+		lineageTag: 0090101a-596e-4fbe-ab3f-542f0a348be7
+		summarizeBy: sum
+		sourceColumn: Visible
+
+		annotation SummarizationSetBy = Automatic
+
+	column Expanded
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a330c26-f81f-4a35-81ff-a9a72691aaeb
+		summarizeBy: sum
+		sourceColumn: Expanded
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Feed Consum_ Animal (F) UOM'
+		dataType: double
+		lineageTag: bfa21fd0-6827-4835-8cf0-ff37ce3528b8
+		summarizeBy: sum
+		sourceColumn: Feed Consum_ Animal (F) UOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Feed Consum_ Animal (M) UOM'
+		dataType: double
+		lineageTag: b823b2ac-0e61-45e9-9fa6-4f063b064133
+		summarizeBy: sum
+		sourceColumn: Feed Consum_ Animal (M) UOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Body Weight Animal (F) UOM'
+		dataType: double
+		lineageTag: 54fbc234-b0a5-470b-8d8a-ef0c6cd64d02
+		summarizeBy: sum
+		sourceColumn: Body Weight Animal (F) UOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Body Weight Animal (M) UOM'
+		dataType: double
+		lineageTag: cd0a9b92-7b1b-42bc-8f63-66ea4a30eecd
+		summarizeBy: sum
+		sourceColumn: Body Weight Animal (M) UOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Average Weight Egg UOM'
+		dataType: double
+		lineageTag: 6652ca4d-fe82-4699-98c9-64d0ba73ee88
+		summarizeBy: sum
+		sourceColumn: Average Weight Egg UOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Strain UOM Feed'
+		dataType: string
+		lineageTag: b4086349-3668-45c9-b1a9-710a41d89de3
+		summarizeBy: none
+		sourceColumn: Strain UOM Feed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain UOM Hen Weight'
+		dataType: string
+		lineageTag: df0642f5-c5f0-4a4d-8bec-7f23a67cad49
+		summarizeBy: none
+		sourceColumn: Strain UOM Hen Weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain UOM Egg Weight'
+		dataType: string
+		lineageTag: 7809ef89-9bcb-405c-9727-91d8514755cc
+		summarizeBy: none
+		sourceColumn: Strain UOM Egg Weight
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemId
+		dataType: string
+		lineageTag: c1d2712a-2365-49f9-a552-a07851205326
+		summarizeBy: none
+		sourceColumn: $systemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fe7d4b75-68d9-499f-affa-18cf4f2b8d7e
+		summarizeBy: none
+		sourceColumn: $systemCreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedBy
+		dataType: string
+		lineageTag: dcb74b64-387e-4065-a9ed-b7a35c880e36
+		summarizeBy: none
+		sourceColumn: $systemCreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c181f39d-5a66-41d6-9832-a489a7576fd1
+		summarizeBy: none
+		sourceColumn: $systemModifiedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedBy
+		dataType: string
+		lineageTag: 91dbdeb6-6d58-4d86-8bf5-bee01f9c4952
+		summarizeBy: none
+		sourceColumn: $systemModifiedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column StrainCod_ID
+		dataType: string
+		lineageTag: 36d8023d-f6e7-4b43-8837-d83d111e4c99
+		summarizeBy: none
+		sourceColumn: StrainCod_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_Strain = HILL_PBI_STRAIN_STD[StrainCod_ID] & "_"&HILL_PBI_STRAIN_STD[Week of Life]
+		lineageTag: 7f478cd5-6346-462a-bc17-9aee8fde8760
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HILL_PBI_STRAIN_STD = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select * from HILL_PBI_STRAIN_STD", CommandTimeout=#duration(0, 2, 0, 0)]),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(Fonte, "StrainCod_ID", each Text.Combine({[Strain Code],[Company], [Version Code]}, "_"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

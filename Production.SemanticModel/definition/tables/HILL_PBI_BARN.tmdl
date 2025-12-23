@@ -1,0 +1,81 @@
+table HILL_PBI_BARN
+	lineageTag: 6695d702-4962-4918-a949-7da04644ea31
+
+	column Company
+		dataType: string
+		lineageTag: 0e5bd8a1-b14d-48f0-82e5-bdcb4d9318a1
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Farm No_'
+		dataType: string
+		lineageTag: 3a9d58fb-0eb9-4723-b70f-d38a635b94a7
+		summarizeBy: none
+		sourceColumn: Farm No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		lineageTag: bdae2eec-196e-43f8-ab35-8a0f98332693
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 60b53d2f-c7e3-46aa-8450-a44c7c5de070
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Search Name'
+		dataType: string
+		lineageTag: 3d4f318e-4d65-46f5-a616-08c673ac2ba6
+		summarizeBy: none
+		sourceColumn: Search Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location Code'
+		dataType: string
+		lineageTag: ec3d73e8-acd8-4469-89fa-67a2c55cc839
+		summarizeBy: none
+		sourceColumn: Location Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Housing Type Code'
+		dataType: string
+		lineageTag: 91801569-c16d-4f8d-be9f-ef20a2db1ac8
+		summarizeBy: none
+		sourceColumn: Housing Type Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_COD
+		dataType: string
+		lineageTag: b24c67ca-1d27-43f8-8909-d4a3edc2864f
+		summarizeBy: none
+		sourceColumn: ID_COD
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HILL_PBI_BARN = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select * from HILL_PBI_BARN", CommandTimeout=#duration(0, 2, 0, 0)]),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"Company", "Farm No_", "Code", "Name", "Search Name", "Location Code", "Housing Type Code"}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Outras Colunas Removidas", "ID_COD", each Text.Combine({[Company], [Farm No_], [Code]}, "_"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

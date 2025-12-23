@@ -1,0 +1,5 @@
+function fxCOLOR =
+		( _value : numeric ) =>
+		        IF( _value < 0 , "red", "blue" )
+	lineageTag: 9fe23786-0e2f-49ec-b85b-c02f019f8a90
+

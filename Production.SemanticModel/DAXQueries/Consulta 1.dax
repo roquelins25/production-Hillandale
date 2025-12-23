@@ -1,0 +1,4 @@
+DEFINE
+    FUNCTION fxCOLOR = ( _value : numeric ) =>
+        IF( _value < 0 , "red", "blue" )
+        

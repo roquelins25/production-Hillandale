@@ -1,0 +1,206 @@
+table HILL_PBI_FLOCK
+	lineageTag: a312a923-4f73-4921-b171-ae69cd0b98be
+
+	column Company
+		dataType: string
+		lineageTag: ad8de4dc-0048-44a1-b8e0-b19435c8efff
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column No_
+		dataType: string
+		lineageTag: f19acf64-01f7-43a0-878e-365f33192d36
+		summarizeBy: none
+		sourceColumn: No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Farm No_'
+		dataType: string
+		lineageTag: 13ae38c0-074c-4228-92c6-af5e381af151
+		summarizeBy: none
+		sourceColumn: Farm No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Barn Code'
+		dataType: string
+		lineageTag: 2ed778a6-32cb-41a2-8399-78d021edf258
+		summarizeBy: none
+		sourceColumn: Barn Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain Code'
+		dataType: string
+		lineageTag: bbd208e9-461f-4b9b-bf1c-1509c5ad64b8
+		summarizeBy: none
+		sourceColumn: Strain Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hatch Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9ab42497-f40a-4c07-9b6b-c01f6e031ac1
+		summarizeBy: none
+		sourceColumn: Hatch Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Starting Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f25fc771-12ef-4ac3-8be7-09552789dd89
+		summarizeBy: none
+		sourceColumn: Starting Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ending Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b9be05bd-241c-43a8-9e6e-6a532b75d0c1
+		summarizeBy: none
+		sourceColumn: Ending Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Female Item No_'
+		dataType: string
+		lineageTag: 131937c2-2a8e-4a42-b716-6fc16a632282
+		summarizeBy: none
+		sourceColumn: Female Item No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: int64
+		formatString: 0
+		lineageTag: 27c94036-9d15-4529-a5fe-149236453839
+		summarizeBy: sum
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order No_'
+		dataType: string
+		lineageTag: 58b7f12e-42ef-42c2-b86a-049f21e5b8fc
+		summarizeBy: none
+		sourceColumn: Order No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain Standard Version Code'
+		dataType: string
+		lineageTag: a4507fb9-3317-4c97-96d2-9cfdf56c3938
+		summarizeBy: none
+		sourceColumn: Strain Standard Version Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Company Name'
+		dataType: string
+		lineageTag: 8cfe57a6-be1f-48b6-ad12-4811b4512a9c
+		summarizeBy: none
+		sourceColumn: Order Company Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column StrainCod_ID
+		dataType: string
+		lineageTag: 86f6ca87-c03d-49d0-ac62-72c4c207756b
+		summarizeBy: none
+		sourceColumn: StrainCod_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_FLOCK
+		dataType: string
+		lineageTag: 7307e8af-0560-40db-accd-a265f85d9d7c
+		summarizeBy: none
+		sourceColumn: ID_FLOCK
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_LAYOUT =
+			
+			//HILL_PBI_BARN_LAYOUT[Company] &"_"& HILL_PBI_BARN_LAYOUT[Farm No_] &"_"& HILL_PBI_BARN_LAYOUT[Barn Code]
+			HILL_PBI_FLOCK[Company] &"_"& HILL_PBI_FLOCK[Farm No_] &"_"& HILL_PBI_FLOCK[Barn Code]
+		lineageTag: d5fd861b-22d6-49b4-9e08-4c7cc1374fa8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column StatusName
+		dataType: string
+		lineageTag: b5a06af3-ac2d-4cb6-aaac-57bcd3095299
+		summarizeBy: none
+		sourceColumn: StatusName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Strain Code2'
+		dataType: string
+		lineageTag: e701db3c-7aaf-40df-8f32-379cc8b285f2
+		summarizeBy: none
+		sourceColumn: Strain Code2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 270294e7-1a2d-4cda-b75e-2eed73947b45
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Search Name'
+		dataType: string
+		lineageTag: 0eb00a89-d2e3-48ba-931a-b71dc5e2cb69
+		summarizeBy: none
+		sourceColumn: Search Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Housing Type Code'
+		dataType: string
+		lineageTag: 2efa2da4-7719-45eb-9e74-ec6367ec00f3
+		summarizeBy: none
+		sourceColumn: Housing Type Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Capacity
+		dataType: double
+		lineageTag: 7a4d5767-b06d-433d-ae6a-2e7b2f2baba7
+		summarizeBy: sum
+		sourceColumn: Capacity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column consider
+		dataType: string
+		lineageTag: 49ba8988-10a5-48ab-9e27-e8dc9428a041
+		summarizeBy: none
+		sourceColumn: consider
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HILL_PBI_FLOCK = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="SELECT#(lf)#(tab)CONCAT_WS('_',flock.[company],flock.[No_]) as ID_FLOCK,#(lf)#(tab)CONCAT_WS('_',flock.[Strain Code],flock.company,flock.[Strain Standard Version Code]) as StrainCod_ID,#(lf)    flock.[Order Company Name],#(lf)    flock.Company,#(lf)    flock.No_,#(lf)    flock.[Farm No_],#(lf)    flock.[Barn Code],#(lf)    flock.[Strain Code],#(lf)    flock.[Hatch Date],#(lf)    flock.[Starting Date],#(lf)    flock.[Ending Date],#(lf)    flock.[Female Item No_],#(lf)    flock.Status,#(lf)    CASE #(lf)        WHEN flock.Status = 1 THEN 'Planned'#(lf)        WHEN flock.Status = 2 THEN 'Released'#(lf)        WHEN flock.Status = 3 THEN 'Finished'#(lf)    END AS StatusName,#(lf)    flock.[Order No_],#(lf)    flock.[Strain Code],#(lf)    flock.[Strain Standard Version Code],#(lf)    barn.Name,#(lf)    barn.[Search Name],#(lf)    outp.[Housing Type Code],#(lf)    layout.Capacity,#(lf)    CASE#(lf)    #(tab)WHEN flock.[No_] = molt.[Flock No_] THEN 'N'#(lf)    #(tab)ELSE null#(lf)    END as consider#(lf)    #(lf)FROM HILL_PBI_FLOCK flock#(lf)#(lf)LEFT JOIN HILL_PBI_BARN barn #(lf)    ON barn.[Farm No_] = flock.[Farm No_]#(lf)   AND barn.Code = flock.[Barn Code]#(lf)   AND barn.[Production Type] = flock.[Type]#(lf)   AND barn.Company = flock.Company#(lf)#(lf)OUTER APPLY (#(lf)    SELECT TOP 1 *#(lf)    FROM HILL_PBI_FLOCK_OUTPUT o#(lf)    WHERE o.Company = flock.Company#(lf)      AND o.[Flock No_] = flock.[No_]#(lf)    ORDER BY o.[Starting Date] desc#(lf)) outp#(lf)#(lf)LEFT JOIN HILL_PBI_BARN_LAYOUT layout#(lf)    ON layout.[Farm No_] = flock.[Farm No_]#(lf)   AND layout.[Barn Code] = flock.[Barn Code]#(lf)   AND layout.Company = flock.Company#(lf)#(lf)LEFT JOIN HILL_PBI_FLOCK_MOLT molt ON molt.company = flock.company#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)#(tab)  AND molt.[Flock No_] = flock.[No_]", CommandTimeout=#duration(0, 2, 0, 0)])
+				in
+				    Fonte
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

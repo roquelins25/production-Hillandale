@@ -1,0 +1,33 @@
+relationship 042bee55-2110-a477-bda1-055d993506f0
+	fromColumn: HILL_PBI_FLOCK_STD_Semana.ID_FLOCK
+	toColumn: HILL_PBI_FLOCK.ID_FLOCK
+
+relationship 1a6c6241-526a-8c36-2b65-f35e934a7daa
+	toCardinality: many
+	fromColumn: HILL_PBI_STRAIN_STD.ID_Strain
+	toColumn: HILL_PBI_FLOCK_STD_Semana.ID_Straincod
+
+relationship f6e9cb59-bf97-c07c-4d1d-72a9f357ea14
+	toCardinality: many
+	fromColumn: HILL_PBI_FLOCK_ENTRY.ID_Entry
+	toColumn: HILL_PBI_FLOCK_STD_Semana.ID_Entry
+
+relationship 909a2f44-957a-b0c4-3e66-d25d58e2d869
+	crossFilteringBehavior: bothDirections
+	fromColumn: HILL_PBI_FLOCK.ID_LAYOUT
+	toColumn: HILL_PBI_BARN_LAYOUT.ID_LAYOUT
+
+relationship AutoDetected_6da354e6-2478-4085-b16f-039856308810
+	fromColumn: HILL_PBI_BARN_LAYOUT.ID_COD
+	toColumn: HILL_PBI_BARN.ID_COD
+
+relationship ad700dcc-87b6-b5cc-3bf1-0706f1c823d5
+	fromColumn: HILL_PBI_FLOCK_STD_Day.'Production Date'
+	toColumn: 'Calendar DAX'.Date
+
+relationship cf2d8cb3-0316-2542-167f-a8bb01098890
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: HILL_PBI_FLOCK_STD_Semana.ID_Week
+	toColumn: HILL_PBI_FLOCK_STD_Day.ID_WEEK
+

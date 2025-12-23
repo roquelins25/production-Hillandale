@@ -1,0 +1,534 @@
+table HILL_PBI_FLOCK_ENTRY
+	lineageTag: faf48d65-cd58-4b8a-b7ed-40a5075fa246
+
+	column Company
+		dataType: string
+		lineageTag: 08d11354-c3e7-41a0-bd47-582538e8cafe
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: 055a9aaf-9bba-4c64-bbdc-b801b7dc14ad
+		summarizeBy: sum
+		sourceColumn: Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Flock No_'
+		dataType: string
+		lineageTag: 332ee20e-3671-4275-a13b-afa297ce8ef1
+		summarizeBy: none
+		sourceColumn: Flock No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posting Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 24d2eb90-7177-4d92-aff7-a302b7b06191
+		summarizeBy: none
+		sourceColumn: Posting Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posting Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0fe8759b-9392-4389-8be2-d3734f1134fc
+		summarizeBy: sum
+		sourceColumn: Posting Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: int64
+		formatString: 0
+		lineageTag: 4140e00d-9517-4b04-a2b4-cc80628d703c
+		summarizeBy: sum
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column No_
+		dataType: string
+		lineageTag: 21eb25cb-c48a-4d4a-ad58-63e477db103b
+		summarizeBy: none
+		sourceColumn: No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 26486958-a947-4a02-a6fd-82a9ff7d721c
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: double
+		lineageTag: b52e0f21-b64a-4e38-a327-cdf6d57cb4d0
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Unit of Measure Code'
+		dataType: string
+		lineageTag: 40c3d9f0-8ad9-450d-95a3-00e8d36411e7
+		summarizeBy: none
+		sourceColumn: Unit of Measure Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location Code'
+		dataType: string
+		lineageTag: ef81c526-5de1-48ac-aace-2793c1ec55f2
+		summarizeBy: none
+		sourceColumn: Location Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Bin Code'
+		dataType: string
+		lineageTag: 35a71fdb-1481-4549-abd5-66886d699758
+		summarizeBy: none
+		sourceColumn: Bin Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document Line No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: e1336249-6ce9-4760-b497-c77e647085d4
+		summarizeBy: sum
+		sourceColumn: Document Line No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prod_ Order Comp_ Line No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: cfe99516-158e-4c6a-868d-f6f965da7761
+		summarizeBy: sum
+		sourceColumn: Prod_ Order Comp_ Line No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Activity Description'
+		dataType: string
+		lineageTag: b8a2e3af-f0a5-45d0-a817-d07d4773e7be
+		summarizeBy: none
+		sourceColumn: Activity Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OVO Activity Type Code'
+		dataType: string
+		lineageTag: e5da67b8-1a87-4db2-93c9-a44ce22b68bd
+		summarizeBy: none
+		sourceColumn: OVO Activity Type Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OVO Activity Code'
+		dataType: string
+		lineageTag: 175d79da-0f91-4d98-bb83-fb56a45b5be9
+		summarizeBy: none
+		sourceColumn: OVO Activity Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Farm No_'
+		dataType: string
+		lineageTag: f1f263f4-d5bd-401b-9274-bb353bcd3610
+		summarizeBy: none
+		sourceColumn: Farm No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Barn Code'
+		dataType: string
+		lineageTag: d08b97d6-1b92-458e-b1b1-7e164eb41c41
+		summarizeBy: none
+		sourceColumn: Barn Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Row Code'
+		dataType: string
+		lineageTag: 68bc6224-4069-4ff1-815e-8364adb0c86d
+		summarizeBy: none
+		sourceColumn: Row Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Barn Act_ Line No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: a8622fff-8620-4259-815d-c92bf551d621
+		summarizeBy: sum
+		sourceColumn: Barn Act_ Line No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Barn Activity Code'
+		dataType: string
+		lineageTag: 38f9f86d-c85a-437d-987b-ce9963732bb6
+		summarizeBy: none
+		sourceColumn: Barn Activity Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week of Life'
+		dataType: int64
+		formatString: 0
+		lineageTag: 186d61c7-ffcb-4fd3-9438-829916a6957d
+		summarizeBy: sum
+		sourceColumn: Week of Life
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Origin Flock No_'
+		dataType: string
+		lineageTag: e5bb62c2-04bd-4bec-9671-e6c880b57c45
+		summarizeBy: none
+		sourceColumn: Origin Flock No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column Correction
+		dataType: int64
+		formatString: 0
+		lineageTag: 3800b8d4-9b4c-430d-a9e8-83bc2c6fc25f
+		summarizeBy: sum
+		sourceColumn: Correction
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Value Type'
+		dataType: int64
+		formatString: 0
+		lineageTag: 365d9d45-e20b-4353-a575-71210f35f204
+		summarizeBy: sum
+		sourceColumn: Value Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time of Day (Entered)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8d646483-21e3-4386-af75-59ae3fb50c50
+		summarizeBy: none
+		sourceColumn: Time of Day (Entered)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 1 Code'
+		dataType: string
+		lineageTag: 884a2275-eb49-4a0e-a877-6eedd3aef1d5
+		summarizeBy: none
+		sourceColumn: Global Dimension 1 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Dimension 2 Code'
+		dataType: string
+		lineageTag: 44c572a2-5ba0-49d8-91bf-8dca36e982e9
+		summarizeBy: none
+		sourceColumn: Global Dimension 2 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Item Ledger Entry No_'
+		dataType: int64
+		formatString: 0
+		lineageTag: abb80bd0-4fb2-4294-b4f6-95118b7df2d7
+		summarizeBy: sum
+		sourceColumn: Item Ledger Entry No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Document No_'
+		dataType: string
+		lineageTag: 20707718-a42c-4ddf-9a17-5774da175fda
+		summarizeBy: none
+		sourceColumn: Document No_
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Quantity _ Reading'
+		dataType: double
+		lineageTag: 9394e54a-7ef2-4348-8127-b9ae604fab92
+		summarizeBy: sum
+		sourceColumn: Quantity _ Reading
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Quantity (Base)'
+		dataType: double
+		lineageTag: d1ec22ba-5d58-439e-b8d6-e43f58e3a895
+		summarizeBy: sum
+		sourceColumn: Quantity (Base)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Qty_ per Unit of Measure'
+		dataType: double
+		lineageTag: 8ec39bbd-cfdc-4100-a997-4312101ceb3d
+		summarizeBy: sum
+		sourceColumn: Qty_ per Unit of Measure
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Flock Phase'
+		dataType: string
+		lineageTag: 083506a2-d75c-456d-9bb6-86ed8f7100eb
+		summarizeBy: none
+		sourceColumn: Flock Phase
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Weight'
+		dataType: double
+		lineageTag: 05590344-099a-4024-b848-46bce05387eb
+		summarizeBy: sum
+		sourceColumn: Total Weight
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'No_ of Animals'
+		dataType: double
+		lineageTag: c9649d80-b14d-4f45-bfbe-4245fbb27352
+		summarizeBy: sum
+		sourceColumn: No_ of Animals
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Uniformity _'
+		dataType: double
+		lineageTag: 43de039d-096f-480f-9a4a-e24f8644c2bc
+		summarizeBy: sum
+		sourceColumn: Uniformity _
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Qty_ Eggs Set'
+		dataType: double
+		lineageTag: a751e846-63a9-4632-8fca-c332ae834805
+		summarizeBy: sum
+		sourceColumn: Qty_ Eggs Set
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Minimum Age Eggs'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8786a180-e638-4a30-a0d6-a0311501387d
+		summarizeBy: sum
+		sourceColumn: Minimum Age Eggs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maximum Age Eggs'
+		dataType: int64
+		formatString: 0
+		lineageTag: a15d99e5-4116-4645-abdc-cc9b82585387
+		summarizeBy: sum
+		sourceColumn: Maximum Age Eggs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qty_ Not Fertilized Eggs'
+		dataType: int64
+		formatString: 0
+		lineageTag: ca574bd5-0ef1-41ae-a1f0-67e37b9dc019
+		summarizeBy: sum
+		sourceColumn: Qty_ Not Fertilized Eggs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qty_ Fertilized Eggs'
+		dataType: int64
+		formatString: 0
+		lineageTag: 137407c6-444f-4d16-a6c2-501a1d73df55
+		summarizeBy: sum
+		sourceColumn: Qty_ Fertilized Eggs
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fertilzed Percentage'
+		dataType: double
+		lineageTag: 29d27263-69cd-4e1f-901f-eea8a7cd640a
+		summarizeBy: sum
+		sourceColumn: Fertilzed Percentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Qty_ Females'
+		dataType: int64
+		formatString: 0
+		lineageTag: e41395c5-4776-4eff-a55b-0aedb5bf880d
+		summarizeBy: sum
+		sourceColumn: Qty_ Females
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qty_ Males'
+		dataType: int64
+		formatString: 0
+		lineageTag: a1d9fade-5f0f-406a-9f09-d45521c277d2
+		summarizeBy: sum
+		sourceColumn: Qty_ Males
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hatch of Set (_)'
+		dataType: double
+		lineageTag: 84eccb68-2169-4dc5-8c50-0bc4dd9b5eb1
+		summarizeBy: sum
+		sourceColumn: Hatch of Set (_)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Hatch of Fertile (_)'
+		dataType: double
+		lineageTag: 1be33c45-a78f-404e-9ee8-bcb44199de70
+		summarizeBy: sum
+		sourceColumn: Hatch of Fertile (_)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Qty_ Culls'
+		dataType: double
+		lineageTag: 907f0573-c8fe-4054-b985-ac43c1e7dedc
+		summarizeBy: sum
+		sourceColumn: Qty_ Culls
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Comment Text'
+		dataType: string
+		lineageTag: 423cf13c-2cb6-46ef-b5fa-bd9f25587ce2
+		summarizeBy: none
+		sourceColumn: Comment Text
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dimension Set ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c0a84a0-740f-4036-9ec3-07e03440ea47
+		summarizeBy: count
+		sourceColumn: Dimension Set ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Transaction ID'
+		dataType: string
+		lineageTag: 5f592769-be9d-42bc-89d2-0e259be442ce
+		summarizeBy: none
+		sourceColumn: Transaction ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemId
+		dataType: string
+		lineageTag: 481fd3df-1beb-477e-91b6-bff8b651b623
+		summarizeBy: none
+		sourceColumn: $systemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 69d11bdf-0707-4781-a3b2-4721f09b96ba
+		summarizeBy: none
+		sourceColumn: $systemCreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemCreatedBy
+		dataType: string
+		lineageTag: ddb8af73-3aa9-4a71-b1da-96ec727873f8
+		summarizeBy: none
+		sourceColumn: $systemCreatedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4e5d2a72-046d-46a8-9ad4-d584eebb895a
+		summarizeBy: none
+		sourceColumn: $systemModifiedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	column $systemModifiedBy
+		dataType: string
+		lineageTag: 977c3536-e872-4930-bb2a-6abaf70a75ef
+		summarizeBy: none
+		sourceColumn: $systemModifiedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_FLOCK
+		dataType: string
+		lineageTag: b4714938-c8a2-430e-af58-87a0cd88fd7e
+		summarizeBy: none
+		sourceColumn: ID_FLOCK
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID_Entry =
+			
+			HILL_PBI_FLOCK_ENTRY[Company]&"_"&HILL_PBI_FLOCK_ENTRY[Flock No_]&"_"&HILL_PBI_FLOCK_ENTRY[Week of Life]
+		lineageTag: d355e76a-c10c-4db3-acb5-db006af47d2a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HILL_PBI_FLOCK_ENTRY = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select * from HILL_PBI_FLOCK_ENTRY", CommandTimeout=#duration(0, 2, 0, 0)]),
+				    #"Colunas Removidas" = Table.RemoveColumns(Fonte,{"timestamp"}),
+				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Colunas Removidas", "ID_FLOCK", each Text.Combine({[Company], [Flock No_]}, "_"), type text)
+				in
+				    #"Coluna Mesclada Inserida"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

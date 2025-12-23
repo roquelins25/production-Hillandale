@@ -1,0 +1,139 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 318.627741084239
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1001.9089284859022,
+            "y": 133.77833020256418
+          },
+          "nodeIndex": "HILL_PBI_FLOCK",
+          "nodeLineageTag": "a312a923-4f73-4921-b171-ae69cd0b98be",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 795.81787588040572,
+            "y": 914.124021934799
+          },
+          "nodeIndex": "HILL_PBI_STRAIN_STD",
+          "nodeLineageTag": "b9c90c0c-8a44-497a-8253-ec18c7828b2f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1088.4111052463322,
+            "y": 915.23441005574364
+          },
+          "nodeIndex": "HILL_PBI_FLOCK_ENTRY",
+          "nodeLineageTag": "faf48d65-cd58-4b8a-b7ed-40a5075fa246",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1325.0080707897696,
+            "y": 451.31415995096881
+          },
+          "nodeIndex": "HILL_PBI_BARN_LAYOUT",
+          "nodeLineageTag": "70384df4-0de3-4a3d-b1e5-0b70f186994f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 539.279593219994,
+            "y": 559.969932271768
+          },
+          "nodeIndex": "HILL_PBI_FLOCK_STD_Semana",
+          "nodeLineageTag": "140b0a89-9fc9-43a5-a893-0acce24f0f25",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 317.647189517675,
+            "y": 914.93588030204762
+          },
+          "nodeIndex": "HILL_PBI_FLOCK_STD_Day",
+          "nodeLineageTag": "bbf66960-b050-430f-8476-8b3631ac0aec",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 177.38957154286027,
+            "y": 257.2182448868495
+          },
+          "nodeIndex": "_Measure",
+          "nodeLineageTag": "048c5790-fccb-4d73-abcd-548603e49496",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1624.3908393702663,
+            "y": 169.34950936735714
+          },
+          "nodeIndex": "HILL_PBI_BARN",
+          "nodeLineageTag": "6695d702-4962-4918-a949-7da04644ea31",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 515.903484590837,
+            "y": 1305.3933127593205
+          },
+          "nodeIndex": "Calendar DAX",
+          "nodeLineageTag": "912e7b74-d360-4e98-91f5-3cdfc6e83a4c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 63.287087723234059,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}
