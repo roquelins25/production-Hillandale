@@ -1,0 +1,83 @@
+table Acess
+	lineageTag: 9bfb4297-c75a-425f-9a6e-afd15299a40e
+
+	measure 'Password Acess' =
+			
+			SWITCH(
+			    TRUE(),
+			    HASONEFILTER( Acess[Email] ) && [Valor yAcess] = MAX( Acess[Password] ), "Page1",
+			    "Incorrect Password"
+			    )
+		lineageTag: 36c643f2-7c9e-4af7-ac14-fa945f454e6f
+
+	column Company
+		dataType: string
+		lineageTag: 8b6b4e60-a851-4e26-bed2-bfdb7e8655e2
+		summarizeBy: none
+		sourceColumn: Company
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: c57994f4-46c2-4d3d-9f6c-d01bf080b50a
+		summarizeBy: none
+		sourceColumn: Email
+		sortByColumn: Indice
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Password
+		dataType: int64
+		lineageTag: 9249cf16-2b63-4337-a307-ca504b84f09e
+		summarizeBy: sum
+		sourceColumn: Password
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Indice
+		dataType: string
+		lineageTag: 168e5389-87d9-4d4d-b72a-e02a31b0d929
+		summarizeBy: none
+		sourceColumn: Indice
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Acess = m
+		mode: import
+		source = ```
+				let
+				    Fonte = SharePoint.Contents("https://hillandalefarms-my.sharepoint.com/personal/mribeiro_hillandalefarms_com"){[Name="Documents"]}[Content]{[Name="BI-Reports"]}[Content]{[Name="Data"]}[Content]{[Name="acess"]}[Content],
+				    #"Added Custom" = Table.AddColumn(Fonte, "Table", each Excel.Workbook([Content],true){0}[Data]),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Added Custom",{"Table"}),
+				    #"Expanded Table" = Table.ExpandTableColumn(#"Removed Other Columns", "Table", {"Company", "Email", "Password", "Column4", "Column5", "Column6", "HICKSVILLE", "Column8", "Row Labels", "Max of Password"}, {"Company", "Email", "Password", "Column4", "Column5", "Column6", "HICKSVILLE", "Column8", "Row Labels", "Max of Password"}),
+				    #"Removed Other Columns1" = Table.SelectColumns(#"Expanded Table",{"Company", "Email", "Password"}),
+				    #"Uppercased Text" = Table.TransformColumns(#"Removed Other Columns1",{{"Company", Text.Upper, type text}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Uppercased Text",{{"Company", type text}, {"Email", type text}, {"Password", Int64.Type}}),
+				
+				
+				    AddRowID = Table.AddIndexColumn(#"Changed Type", "RowID", 0, 1, Int64.Type),
+				    
+				
+				    AddPrevEmail = Table.AddColumn(AddRowID, "PrevEmail", each try AddRowID[Email]{[RowID]-1} otherwise null),
+				    
+				
+				    AddFlag = Table.AddColumn(AddPrevEmail, "Flag", each if [Email] <> [PrevEmail] then 1 else 0),
+				    
+				
+				    AddIndice = Table.AddColumn(AddFlag, "Indice", each List.Sum(List.FirstN(AddFlag[Flag],[RowID]+1))),
+				    
+				
+				    RemoveAux = Table.RemoveColumns(AddIndice,{"RowID","PrevEmail","Flag"})
+				in
+				    RemoveAux
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

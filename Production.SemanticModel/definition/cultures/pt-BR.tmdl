@@ -12934,16 +12934,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.485
 			          }
-			        },
-			        {
-			          "% Real Mort": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -13068,16 +13058,6 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "% STD Mortality": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "% Stander": {
 			            "State": "Suggested",
 			            "Source": {
@@ -13088,7 +13068,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "% Standard": {
+			          "% STD Mortality": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -13943,16 +13923,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.475
 			          }
-			        },
-			        {
-			          "Real / Doz": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14077,37 +14047,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "STD %": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "% Stander Eggs": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "% STD Eggs": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Stander % Eggs": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -14231,16 +14171,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.482
 			          }
-			        },
-			        {
-			          "Real %": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -14272,16 +14202,6 @@ cultureInfo pt-BR
 			        {
 			          "compair qtty eggs STD": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "DIFF": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14338,16 +14258,6 @@ cultureInfo pt-BR
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "% Ocupp.": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -15867,16 +15777,6 @@ cultureInfo pt-BR
 			        {
 			          "STD eggs qtty": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "STD / Doz": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]

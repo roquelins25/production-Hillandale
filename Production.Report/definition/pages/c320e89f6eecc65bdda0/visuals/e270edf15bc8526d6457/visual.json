@@ -4,10 +4,10 @@
   "position": {
     "x": 93,
     "y": 447,
-    "z": 11,
+    "z": 11000,
     "height": 372,
     "width": 1165,
-    "tabOrder": 7
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -600,78 +600,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "7c58f1f8567019d0f0d8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "HILL_PBI_FLOCK_STD_Semana"
-              }
-            },
-            "Property": "Week of Life"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "39c769def175fb6feea1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measure"
-              }
-            },
-            "Property": "Qtty Eggs"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "be52ca818d4208d6759e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measure"
-              }
-            },
-            "Property": "Qtty de Aves"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0d40d81b8982f5ec003c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measure"
-              }
-            },
-            "Property": "% Qtty Eggs"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "12e78e4f78274b31c725",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measure"
-              }
-            },
-            "Property": "STD Eggs Percent"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
-  }
+  "isHidden": true
 }

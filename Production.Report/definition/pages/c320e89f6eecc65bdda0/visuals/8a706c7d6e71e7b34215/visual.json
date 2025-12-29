@@ -4,10 +4,10 @@
   "position": {
     "x": 774.81818181818153,
     "y": 63.9090909090909,
-    "z": 5,
+    "z": 5000,
     "height": 65,
     "width": 201,
-    "tabOrder": 5
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -160,7 +160,7 @@
                             },
                             {
                               "Literal": {
-                                "Value": "'Dec-2025'"
+                                "Value": "'Nov-2025'"
                               }
                             }
                           ]
@@ -207,7 +207,7 @@
                                 "1": [
                                   {
                                     "Literal": {
-                                      "Value": "'Dec-2025'"
+                                      "Value": "'Nov-2025'"
                                     }
                                   }
                                 ]
@@ -244,7 +244,7 @@
                         "valueMap": [
                           {
                             "0": "2025",
-                            "1": "Dec-2025"
+                            "1": "Nov-2025"
                           }
                         ]
                       }

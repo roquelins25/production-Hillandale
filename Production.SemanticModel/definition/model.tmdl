@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBI_QueryOrder = ["HILL_PBI_FLOCK","HILL_PBI_FLOCK_STD_Semana","HILL_PBI_STRAIN_STD","HILL_PBI_FLOCK_ENTRY","HILL_PBI_FLOCK_STD_Day","HILL_PBI_BARN_LAYOUT","_Measure","HILL_PBI_BARN"]
+annotation PBI_QueryOrder = ["HILL_PBI_FLOCK","HILL_PBI_FLOCK_STD_Semana","HILL_PBI_STRAIN_STD","HILL_PBI_FLOCK_ENTRY","HILL_PBI_FLOCK_STD_Day","HILL_PBI_BARN_LAYOUT","_Measure","HILL_PBI_BARN","Acess"]
 
 annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
 
@@ -21,6 +21,8 @@ ref table HILL_PBI_FLOCK_STD_Day
 ref table _Measure
 ref table HILL_PBI_BARN
 ref table 'Calendar DAX'
+ref table Acess
+ref table yAcess
 
 ref cultureInfo pt-BR
 

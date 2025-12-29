@@ -4,10 +4,10 @@
   "position": {
     "x": 92.72727272727272,
     "y": 839.090909090909,
-    "z": 7,
+    "z": 7000,
     "height": 788.18181818181813,
     "width": 1164.5454545454545,
-    "tabOrder": 6
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -118,7 +118,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK_STD_Semana.Week of Life",
               "nativeQueryRef": "Week of Life",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -371,21 +371,7 @@
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "HILL_PBI_FLOCK_STD_Semana"
-                  }
-                },
-                "Property": "Week of Life"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
+        "isDefaultSort": true
       }
     },
     "expansionStates": [
@@ -557,12 +543,59 @@
                   }
                 }
               ],
+              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
                     {
                       "Literal": {
                         "Value": "'02-ATL'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'CAGE FREE'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'ATLCF01'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'HY BR'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'02-ATLPUL'"
                       }
                     }
                   ],
@@ -588,7 +621,6 @@
                       }
                     }
                   ],
-                  "isToggled": true,
                   "children": [
                     {
                       "identityValues": [
@@ -598,7 +630,6 @@
                           }
                         }
                       ],
-                      "isToggled": true,
                       "children": [
                         {
                           "identityValues": [
@@ -625,6 +656,212 @@
                                     {
                                       "Literal": {
                                         "Value": "'GB0031501'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'GB00313'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'DKLW'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'GB031302'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'CAGE FREE'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'GBCF302'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'LSL WHITE'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'GBCF30201'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'C01-DBOWCF'"
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'FREE RANGE'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'DBOWCF2'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'HY BR'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'DBOWCF202'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true,
+                                  "children": [
+                                    {
+                                      "identityValues": [
+                                        {
+                                          "Literal": {
+                                            "Value": "25L"
+                                          }
+                                        }
+                                      ],
+                                      "isToggled": true
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'C01P-BLECF'"
+                      }
+                    }
+                  ],
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'CAGE FREE'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'BLEICF2'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'HY BR'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'BLECF202'"
                                       }
                                     }
                                   ],
@@ -749,7 +986,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "108.28067902921926D"
+                  "Value": "176.11384398808778D"
                 }
               }
             }
@@ -763,7 +1000,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "71.14285447368066D"
+                  "Value": "123.04006510403426D"
                 }
               }
             }
@@ -791,7 +1028,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "88.5676356914804D"
+                  "Value": "98.61703583262367D"
                 }
               }
             }
