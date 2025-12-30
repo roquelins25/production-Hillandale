@@ -1,0 +1,42 @@
+table 'yScenario Selection'
+	lineageTag: c31d4c26-9d88-48fe-bc8d-56b80b5ca9f5
+
+	column ID
+		dataType: string
+		lineageTag: 33da3d52-fae2-4f3c-aa22-1b6d65850d0e
+		summarizeBy: none
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 372129fb-21f9-445d-9165-1be4ff53d646
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: ID
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Display Name Alt.'
+		dataType: string
+		lineageTag: 960827bf-6ab1-488a-b997-2919eac52aa6
+		summarizeBy: none
+		sourceColumn: Display Name Alt.
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'yScenario Selection' = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlTSUfINARH5RSWJOZkllUqxOtFKRkARV3cQkZ5erBQbCwA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [ID = _t, Name = _t, #"Display Name Alt." = _t])
+				in
+				    Fonte
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

@@ -1,4 +1,14 @@
 DEFINE
-    FUNCTION fxCOLOR = ( _value : numeric ) =>
-        IF( _value < 0 , "red", "blue" )
+// Refence Function is Format Number
+    FUNCTION fxFormatNumber = ( xNumber : numeric ) =>
+        VAR _Formato =
+            SWITCH(
+                TRUE(),
+                ABS(xNumber) >= 1000000, "#,##0,,.00M;#,##0,,.00M",
+                ABS(xNumber) >= 1000,   "#,##0,.00K;#,##0,.00K",
+                "#,##0.00;#,##0.00"
+            )
+        RETURN
+            FORMAT(xNumber, _Formato,"en-US")
+
         

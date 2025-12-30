@@ -2,7 +2,7 @@ table 'Calendar DAX'
 	lineageTag: 912e7b74-d360-4e98-91f5-3cdfc6e83a4c
 
 	column Date
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 71e7804b-3676-4540-9142-5492e1a1cc06
 		summarizeBy: none
 		isNameInferred
@@ -13,7 +13,7 @@ table 'Calendar DAX'
 	column Year
 		formatString: 0
 		lineageTag: 6520af64-330c-4a50-8d7f-450e301b09f2
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Year]
 
@@ -22,7 +22,7 @@ table 'Calendar DAX'
 	column Month
 		formatString: 0
 		lineageTag: 8b53b1cc-99f7-4292-9e55-e5346fd93369
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Month]
 
@@ -64,7 +64,7 @@ table 'Calendar DAX'
 	column Day
 		formatString: 0
 		lineageTag: bace029f-a63d-4580-b193-9669806af511
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Day]
 
@@ -97,7 +97,7 @@ table 'Calendar DAX'
 	column 'Org.Year-Month'
 		formatString: 0
 		lineageTag: c46556e3-d3ab-4229-a30f-5c7a3b885b7f
-		summarizeBy: none
+		summarizeBy: sum
 		isNameInferred
 		sourceColumn: [Org.Year-Month]
 

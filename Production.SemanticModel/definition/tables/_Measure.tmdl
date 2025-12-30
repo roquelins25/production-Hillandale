@@ -1,7 +1,7 @@
 table _Measure
 	lineageTag: 048c5790-fccb-4d73-abcd-548603e49496
 
-	measure 'Qtty de Aves' = ```
+	measure 'Qtty Birds' = ```
 			
 			VAR Tbl =
 			    ADDCOLUMNS(
@@ -20,7 +20,7 @@ table _Measure
 			IF( ISINSCOPE( HILL_PBI_FLOCK_STD_Semana[Week of Life]) = FALSE() ,
 			    SUMX(Tbl, [@MinQtde]),
 			IF(
-			    ISINSCOPE( HILL_PBI_FLOCK_STD_Day[Production Date] ) ,  
+			    ISINSCOPE( 'Calendar DAX'[Date] ) ,  
 			    SUM( HILL_PBI_FLOCK_STD_Day[Calculated No_ of Animals (F)] ) ,
 			    SUM( HILL_PBI_FLOCK_STD_Semana[Calculated No_ of Animals (F)])
 			) )
@@ -28,7 +28,7 @@ table _Measure
 			vRESULT
 			```
 		formatString: #,0
-		displayFolder: PRD
+		displayFolder: PRD\01.PRD
 		lineageTag: fe7e57dd-3251-49b5-a094-f31ab1f0aa75
 
 		annotation PBI_FormatHint = {"isDecimal":true}
@@ -41,14 +41,14 @@ table _Measure
 			            HILL_PBI_FLOCK[Order Company Name],
 			           HILL_PBI_FLOCK[No_],
 			        "@MinQtde",
-			           IF( ISBLANK( [Qtty de Aves] ), BLANK() , SUM( HILL_PBI_FLOCK[Capacity] ) )
+			           IF( ISBLANK( [Qtty Birds] ), BLANK() , SUM( HILL_PBI_FLOCK[Capacity] ) )
 			    )
 			
 			
 			VAR vRESULT = 
 			IF( ISINSCOPE( HILL_PBI_FLOCK_STD_Semana[Week of Life]) = FALSE() ,
 			    SUMX(Tbl, [@MinQtde]),
-			    IF( ISBLANK( [Qtty de Aves] ), BLANK() , SUM( HILL_PBI_FLOCK[Capacity] ) )
+			    IF( ISBLANK( [Qtty Birds] ), BLANK() , SUM( HILL_PBI_FLOCK[Capacity] ) )
 			)
 			RETURN
 			IF(
@@ -56,7 +56,7 @@ table _Measure
 			vRESULT )
 			```
 		formatString: #,0
-		displayFolder: PRD
+		displayFolder: PRD\01.PRD
 		lineageTag: 7a2b4557-1920-4b1e-8403-dbed0a2fb001
 
 		annotation PBI_FormatHint = {"isDecimal":true}
@@ -65,20 +65,19 @@ table _Measure
 			
 			CALCULATE(
 			    SUM( HILL_PBI_FLOCK_ENTRY[Quantity] ),
-			    HILL_PBI_FLOCK_ENTRY[OVO Activity Code] = "MORT_HENS",
-			    TREATAS( VALUES( HILL_PBI_FLOCK_STD_Day[Production Date] ), HILL_PBI_FLOCK_ENTRY[Posting Date] )
+			    HILL_PBI_FLOCK_ENTRY[OVO Activity Code] = "MORT_HENS"
 			)
 		formatString: #,0
-		displayFolder: PRD
+		displayFolder: PRD\01.PRD
 		lineageTag: ba45ce43-8f9f-47fc-9be5-27849ecd0978
 
 		annotation PBI_FormatHint = {"isDecimal":true}
 
 	measure Balance =
 			
-			[Qtty de Aves] - ( ABS( [Mortality] ) )
+			[Qtty Birds] - ( ABS( [Mortality] ) )
 		formatString: #,0
-		displayFolder: PRD
+		displayFolder: PRD\01.PRD
 		lineageTag: d64bbb0c-3beb-4eb8-9608-0c2e94819f91
 
 		annotation PBI_FormatHint = {"isDecimal":true}
@@ -91,12 +90,12 @@ table _Measure
 			        HILL_PBI_FLOCK_STD_Semana,
 			        HILL_PBI_FLOCK_STD_Semana[Flock No_],
 			        HILL_PBI_FLOCK_STD_Semana[Week of Life] ,
-			        "@total", DIVIDE( ABS( [Mortality] ), [Qtty de Aves] , 0 ) ),
+			        "@total", DIVIDE( ABS( [Mortality] ), [Qtty Birds] , 0 ) ),
 			    [@total] )
 			RETURN
 			Tbl
 		formatString: 0.00%;-0.00%;0.00%
-		displayFolder: PRD
+		displayFolder: PRD\02.%
 		lineageTag: 154bf74f-ba53-4472-b517-8da7ef3f8ac9
 
 	measure 'STD Mortality Percent' =
@@ -128,7 +127,7 @@ table _Measure
 	measure 'Acum Mortality' =
 			
 			CALCULATE(
-			    DIVIDE( ABS( [Mortality] ), [Qtty de Aves] , 0 ) ,
+			    DIVIDE( ABS( [Mortality] ), [Qtty Birds] , 0 ) ,
 			    FILTER(
 			        ALL( HILL_PBI_FLOCK_STD_Semana[Week of Life] ),
 			        HILL_PBI_FLOCK_STD_Semana[Week of Life] <= MAX( HILL_PBI_FLOCK_STD_Day[Week of Life] )
@@ -157,7 +156,7 @@ table _Measure
 		formatString: #,0.00%;-#,0.00%;#,0.00%
 		lineageTag: 03c3c315-5f57-4c1c-93c4-646edefd027c
 
-	measure 'Qtty Eggs' = ```
+	measure 'Qtty Eggs Standart' = ```
 			
 			VAR Tbl =
 			    ADDCOLUMNS(
@@ -184,7 +183,7 @@ table _Measure
 			SUM( HILL_PBI_FLOCK_STD_Day[Calculated Qty_ Eggs] )
 			```
 		formatString: #,0
-		displayFolder: PRD
+		displayFolder: STD
 		lineageTag: 56be849c-a54b-45da-978e-50a94c8506e1
 
 		annotation PBI_FormatHint = {"isDecimal":true}
@@ -207,32 +206,11 @@ table _Measure
 		displayFolder: STD
 		lineageTag: 98729835-1b0b-4525-a443-a4a041d60467
 
-	measure '% Qtty Eggs' = ```
+	measure '% Qtty Eggs' =
 			
-			VAR Tbl =
-			AVERAGEX(
-			    SUMMARIZE(
-			        HILL_PBI_FLOCK_STD_Semana,
-			        HILL_PBI_FLOCK_STD_Semana[Flock No_],
-			        HILL_PBI_FLOCK_STD_Semana[Week of Life] ,
-			        "@total", DIVIDE( [Qtty Eggs] , [Qtty de Aves] , 0 )
-			    ),
-			    [@total] )
-			VAR vRESULT = 
-			IF(
-			    ISINSCOPE( HILL_PBI_FLOCK_STD_Day[Production Date] ), 
-			    DIVIDE( [Qtty Eggs], [Qtty de Aves], 0 ),
-			    DIVIDE( [Qtty Eggs] , [Qtty de Aves] , 0 )
-			)
-			RETURN
-			/*
-			IF( ISINSCOPE( HILL_PBI_FLOCK_STD_Semana[Week of Life]) = FALSE() ,
-			    Tbl,
-			    vRESULT ) */
-			    DIVIDE( [Qtty Eggs] , SUM( HILL_PBI_FLOCK_STD_Day[Calculated No_ of Animals (F)] ), 0 )
-			```
+			DIVIDE( [Qtty Eggs] , SUM( HILL_PBI_FLOCK_STD_Day[Calculated No_ of Animals (F)] ), 0 )
 		formatString: 0.00%;-0.00%;0.00%
-		displayFolder: PRD
+		displayFolder: PRD\02.%
 		lineageTag: 676645c3-9521-4e14-8a8d-b4c7bba14b9a
 
 	measure 'Qtty Eggs Doz' =
@@ -240,6 +218,7 @@ table _Measure
 			// Quantity of eggs per dozen
 			[Qtty Eggs] / 12
 		formatString: #,0
+		displayFolder: PRD\01.PRD
 		lineageTag: a48bdc3a-3990-44f1-a9f8-cc90118c1563
 
 	measure 'Compair Qtty Eggs STD' =
@@ -251,9 +230,9 @@ table _Measure
 
 	measure '% Total Occupied' =
 			
-			DIVIDE( [Qtty de Aves], [Capacity], 0 )
+			DIVIDE( [Qtty Birds], [Capacity], 0 )
 		formatString: 0.00%;-0.00%;0.00%
-		displayFolder: PRD
+		displayFolder: PRD\02.%
 		lineageTag: 777d9fc2-c828-415f-a4eb-3aeeffe75c8b
 
 	measure 'STD Production Qtty' = ```
@@ -270,7 +249,7 @@ table _Measure
 			
 			VAR __Calculat = 
 			CALCULATE(
-			    [Qtty de Aves],
+			    [Qtty Birds],
 			    __Ofsset )
 			RETURN
 			__Calculat - (__Calculat * [STD Mortality Percent] )
@@ -300,18 +279,171 @@ table _Measure
 
 	measure 'STD Eggs Qtty' =
 			
-			[Qtty de Aves] * [STD Eggs Percent]
+			[Qtty Birds] * [STD Eggs Percent]
 		formatString: #,0
 		displayFolder: STD
 		lineageTag: a63492e5-3c1d-4ef9-a8a8-7b67b78e89b6
 
 		annotation PBI_FormatHint = {"isDecimal":true}
 
-	measure Medida =
+	measure 'Qtty Eggs' = ```
 			
-			SUM( HILL_PBI_FLOCK_STD_Day[Calculated No_ of Animals (F)] )
-		formatString: 0.00
+			CALCULATE(
+			    SUM( HILL_PBI_FLOCK_ENTRY[Quantity] ),
+			    HILL_PBI_FLOCK_ENTRY[OVO Activity Code] = "Eggs" )
+			
+			```
+		formatString: #,0
+		displayFolder: PRD\01.PRD
 		lineageTag: bae28401-6f26-41f8-aaa2-0fd98f4f26c9
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure '_Revenue Scenario' = ```
+			
+			VAR _Slect = SELECTEDVALUE( 'yScenario Selection'[Name] )
+			
+			VAR _Result = 
+			SWITCH(
+			    _Slect,
+			    "MT", [% Mortality],
+			    "EG", [% Qtty Eggs] )
+			RETURN
+			_Result
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: acfe63a3-a0be-405a-b1a5-f5734b9b0cd0
+
+	measure '_Max QTT Eggs' = ```
+			
+			VAR vMAX = 
+			CALCULATE(
+			MAXX(
+			    HILL_PBI_FLOCK_STD_Semana ,
+			    [Qtty Eggs Standart]),
+			    ALL( HILL_PBI_FLOCK_STD_Semana[Week of Life] ) )
+			
+			VAR _First = 
+			( vMAX * 0.30 ) + vMAX
+			
+			VAR _FirstWeekInContext =
+			    CALCULATE(
+			        MIN(HILL_PBI_FLOCK_STD_Semana[Week of Life]),
+			        ALLSELECTED(HILL_PBI_FLOCK_STD_Semana[Week of Life])
+			    )
+			VAR _FirstWeekInContext2 =
+			    CALCULATE(
+			        MAX(HILL_PBI_FLOCK_STD_Semana[Week of Life]),
+			        ALLSELECTED(HILL_PBI_FLOCK_STD_Semana[Week of Life])
+			    )
+			RETURN
+			
+			IF( SELECTEDVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life] ) >= _FirstWeekInContext && 
+			    SELECTEDVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life] ) <= _FirstWeekInContext2, _First , BLANK() )
+			```
+		lineageTag: 4000ab24-46d7-4b87-9975-ee585b1bb142
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'First Birds Flock' = ```
+			
+			VAR _First = 
+			    CALCULATE(
+			        FIRSTNONBLANKVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life],[Qtty Birds] ),
+			        ALLSELECTED( HILL_PBI_FLOCK_STD_Semana[Week of Life] ),
+			        ALL('Calendar DAX')
+			    )
+			VAR _FirstWeekInContext =
+			    CALCULATE(
+			        MIN(HILL_PBI_FLOCK_STD_Semana[Week of Life]),
+			        ALLSELECTED(HILL_PBI_FLOCK_STD_Semana[Week of Life])
+			    )
+			VAR _FirstWeekInContext2 =
+			    CALCULATE(
+			        MAX(HILL_PBI_FLOCK_STD_Semana[Week of Life]),
+			        ALLSELECTED(HILL_PBI_FLOCK_STD_Semana[Week of Life])
+			    )
+			RETURN
+			
+			IF( SELECTEDVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life] ) >= _FirstWeekInContext && 
+			    SELECTEDVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life] ) <= _FirstWeekInContext2, _First , BLANK() )
+			```
+		displayFolder: PRD\01.PRD
+		lineageTag: 537d715e-43c0-4e49-a39d-956e90a8c89e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Mortality Grafic' =
+			
+			ABS( [Mortality] )
+		displayFolder: PRD\01.PRD
+		lineageTag: 26b6f3ef-f345-4138-9c14-3f68a64533e8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Minx Grafic' = ```
+			
+			VAR _MINx = 
+			CALCULATE(
+			    MINX(
+			        HILL_PBI_FLOCK_STD_Semana,
+			        [Qtty Birds] ),
+			    ALLSELECTED( HILL_PBI_FLOCK_STD_Semana[Week of Life] )
+			) * 0.95
+			  RETURN
+			IF(
+			    ISBLANK( [Qtty Birds] ), BLANK() ,  _MINx )
+			```
+		displayFolder: PRD\01.PRD
+		lineageTag: f3357fd3-894e-4e53-936e-a63875fe05b3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'First Birds Flock Number' = ```
+			
+			    CALCULATE(
+			        FIRSTNONBLANKVALUE( HILL_PBI_FLOCK_STD_Semana[Week of Life],[Qtty Birds] ),
+			        ALLSELECTED( HILL_PBI_FLOCK_STD_Semana[Week of Life] ),
+			        ALL('Calendar DAX')
+			    )
+			```
+		displayFolder: PRD\01.PRD
+		lineageTag: 1dbeaa58-8fa8-4465-889a-d2e01aebe5eb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Compair Qtty Eggs STD Number' =
+			
+			[Qtty Eggs] - [Qtty Eggs Standart]
+		displayFolder: COMP
+		lineageTag: 6bed08c0-6a69-4a5d-8dac-b7f5d5113d61
+
+		formatStringDefinition = fxFormatNumber( SELECTEDMEASURE() )
+
+	measure 'Compair Qtty Eggs Number Grafic' = [Qtty Eggs] - [Qtty Eggs Standart]
+		lineageTag: 5a2a8323-59e0-4bbd-81b5-14bc2e9b8b46
+
+		formatStringDefinition = ```
+				
+				 VAR xNumber = SELECTEDMEASURE()
+				        
+				        VAR _Formato =
+				            SWITCH(
+				                TRUE(),
+				                ABS(xNumber) >= 1000000, "#,##0,,.00M",
+				                ABS(xNumber) >= 1000,   "#,##0,.00K",
+				                "#,##0.00"
+				            )
+				        RETURN
+				            FORMAT(xNumber, _Formato,"en-US")
+				```
+
+	measure '_Max Qtt Eggs Var' =
+			
+			( [_Max QTT Eggs] * 0.15 ) + _Measure[_Max QTT Eggs]
+		lineageTag: 254ff2c5-b285-40e1-9fca-0bfac34ef79f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition _Measure = m
 		mode: import

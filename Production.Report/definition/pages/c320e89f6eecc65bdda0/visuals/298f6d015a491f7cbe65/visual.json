@@ -42,11 +42,11 @@
                       "Entity": "_Measure"
                     }
                   },
-                  "Property": "Qtty Eggs"
+                  "Property": "Qtty Eggs Standart"
                 }
               },
               "queryRef": "_Measure.Qtty Eggs",
-              "nativeQueryRef": "Qtty Eggs"
+              "nativeQueryRef": "Qtty Eggs Standart"
             },
             {
               "field": {

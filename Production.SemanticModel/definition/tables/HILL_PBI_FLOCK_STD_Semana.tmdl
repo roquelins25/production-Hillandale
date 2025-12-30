@@ -1,3 +1,5 @@
+/// Base de Lançamentos de Aves por semana
+/// 
 table HILL_PBI_FLOCK_STD_Semana
 	lineageTag: 140b0a89-9fc9-43a5-a893-0acce24f0f25
 
@@ -297,13 +299,9 @@ table HILL_PBI_FLOCK_STD_Semana
 		mode: import
 		source =
 				let
-				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select * from HILL_PBI_FLOCK_STD", CommandTimeout=#duration(0, 2, 0, 0)]),
-				    #"Linhas Filtradas" = Table.SelectRows(Fonte, each ([Week Day] = 1)),
-				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Linhas Filtradas",{"Company", "Flock No_", "Week of Life", "Percentage Layers", "Feed Consumption Animal (F)", "Qty_ Eggs per Female", "Body Weight Animal (F)", "Mortality Percentage Female", "Water Consumption", "Hours Light", "Calculated Qty_ Feed Female", "Calculated No_ of Animals (F)", "Calculated No_ of Animals (M)", "Production Date", "Calculated Qty_ Eggs", "Standard Qty_ Feed Female", "Standard No_ of Animals (F)", "Standard No_ of Animals (M)", "Standard Qty_ Eggs", "Standard Qty_ Water", "Std_ Qty_ Fertile Eggs", "Std_ Qty_ of Hatched Animals", "Standard Qty_ Culled", "Std_ Qty_ Hatched Animals (F)", "Std_ Qty_ Hatched Animals (M)", "Standard Qty_ Feed Male","Feed Item No_"}),
-				    #"Coluna Mesclada Inserida" = Table.AddColumn(#"Outras Colunas Removidas", "ID_FLOCK", each Text.Combine({[Company], [Flock No_]}, "_"), type text),
-				    #"Coluna Mesclada Inserida1" = Table.AddColumn(#"Coluna Mesclada Inserida", "ID_Week", each Text.Combine({[ID_FLOCK], Text.From([Week of Life], "pt-BR")}, "_"), type text)
+				    Fonte = Sql.Database("10.1.31.31", "Hillandale_Live", [Query="select#(lf)CONCAT_WS('_',Company ,[Flock No_] ) as ID_FLOCK,#(lf)CONCAT_WS('_', Company , [Flock No_] , [Week of Life] ) as ID_Week,#(lf)    [Company],#(lf)    [Flock No_],#(lf)    [Week of Life],#(lf)    [Production Date],#(lf)    [Percentage Layers],#(lf)    [Feed Consumption Animal (F)],#(lf)    [Qty_ Eggs per Female],#(lf)    [Body Weight Animal (F)],#(lf)    [Mortality Percentage Female],#(lf)    [Water Consumption],#(lf)    [Hours Light],#(lf)    [Calculated Qty_ Feed Female],#(lf)    [Calculated No_ of Animals (F)],#(lf)    [Calculated No_ of Animals (M)],#(lf)    [Calculated Qty_ Eggs],#(lf)    [Standard Qty_ Feed Female],#(lf)    [Standard No_ of Animals (F)],#(lf)    [Standard No_ of Animals (M)],#(lf)    [Standard Qty_ Eggs],#(lf)    [Standard Qty_ Water],#(lf)    [Std_ Qty_ Fertile Eggs],#(lf)    [Std_ Qty_ of Hatched Animals],#(lf)    [Standard Qty_ Culled],#(lf)    [Std_ Qty_ Hatched Animals (F)],#(lf)    [Std_ Qty_ Hatched Animals (M)],#(lf)    [Standard Qty_ Feed Male],#(lf)    [Feed Item No_]#(lf)from HILL_PBI_FLOCK_STD#(lf)where [Week Day] = 1 #(lf)#(tab)AND [Production Date] <= GETDATE()#(lf)", CommandTimeout=#duration(0, 2, 0, 0)])
 				in
-				    #"Coluna Mesclada Inserida1"
+				    Fonte
 
 	annotation PBI_NavigationStepName = Navegação
 

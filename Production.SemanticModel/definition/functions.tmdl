@@ -3,3 +3,16 @@ function fxCOLOR =
 		        IF( _value < 0 , "red", "blue" )
 	lineageTag: 9fe23786-0e2f-49ec-b85b-c02f019f8a90
 
+function fxFormatNumber =
+		( xNumber : numeric ) =>
+		        VAR _Formato =
+		            SWITCH(
+		                TRUE(),
+		                ABS(xNumber) >= 1000000, "#,##0,,.00M;#,##0,,.00M",
+		                ABS(xNumber) >= 1000,   "#,##0,.00K;#,##0,.00K",
+		                "#,##0.00;#,##0.00"
+		            )
+		        RETURN
+		            FORMAT(xNumber, _Formato,"en-US")
+	lineageTag: 8d70a8b9-e6a8-46bf-8e15-ffb3744baf79
+

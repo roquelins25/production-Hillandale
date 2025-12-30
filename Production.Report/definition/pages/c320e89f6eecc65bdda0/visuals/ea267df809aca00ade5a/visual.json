@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "ea267df809aca00ade5a",
   "position": {
-    "x": 92.72727272727272,
-    "y": 839.090909090909,
+    "x": 94,
+    "y": 840,
     "z": 7000,
-    "height": 788.18181818181813,
-    "width": 1164.5454545454545,
+    "height": 788,
+    "width": 1164,
     "tabOrder": 6000
   },
   "visual": {
@@ -43,7 +43,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Farm No_",
               "nativeQueryRef": "Farm No_",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Housing Type Code",
               "nativeQueryRef": "Housing Type Code",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -73,7 +73,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Barn Code",
               "nativeQueryRef": "Barn Code",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -88,7 +88,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Strain Code",
               "nativeQueryRef": "Strain Code",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -103,7 +103,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.No_",
               "nativeQueryRef": "No_",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -125,14 +125,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "HILL_PBI_FLOCK_STD_Day"
+                      "Entity": "Calendar DAX"
                     }
                   },
-                  "Property": "Production Date"
+                  "Property": "Date"
                 }
               },
-              "queryRef": "HILL_PBI_FLOCK_STD_Day.Production Date",
-              "nativeQueryRef": "Production Date",
+              "queryRef": "Calendar DAX.Date",
+              "nativeQueryRef": "Date",
               "active": false
             }
           ]
@@ -175,11 +175,11 @@
                       "Entity": "_Measure"
                     }
                   },
-                  "Property": "Qtty de Aves"
+                  "Property": "Qtty Birds"
                 }
               },
               "queryRef": "_Measure.Total Production",
-              "nativeQueryRef": "Qtty de Aves"
+              "nativeQueryRef": "Qtty Birds"
             },
             {
               "field": {
@@ -308,8 +308,22 @@
                   "Property": "Qtty Eggs"
                 }
               },
-              "queryRef": "_Measure.Qtty Eggs",
+              "queryRef": "_Measure.Medida1",
               "nativeQueryRef": "Qtty Eggs"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measure"
+                    }
+                  },
+                  "Property": "Qtty Eggs Standart"
+                }
+              },
+              "queryRef": "_Measure.Qtty Eggs",
+              "nativeQueryRef": "Qtty Eggs Standart"
             },
             {
               "field": {
@@ -515,21 +529,9 @@
           },
           {
             "queryRefs": [
-              "HILL_PBI_FLOCK_STD_Day.Production Date"
+              "Calendar DAX.Date"
             ],
             "isCollapsed": true,
-            "identityKeys": [
-              {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "HILL_PBI_FLOCK_STD_Day"
-                    }
-                  },
-                  "Property": "Production Date"
-                }
-              }
-            ],
             "isPinned": true
           }
         ],
@@ -543,7 +545,6 @@
                   }
                 }
               ],
-              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
@@ -553,7 +554,6 @@
                       }
                     }
                   ],
-                  "isToggled": true,
                   "children": [
                     {
                       "identityValues": [
@@ -563,7 +563,6 @@
                           }
                         }
                       ],
-                      "isToggled": true,
                       "children": [
                         {
                           "identityValues": [
@@ -584,6 +583,51 @@
                                 }
                               ],
                               "isToggled": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'CAGED'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'ATL00A3'"
+                              }
+                            }
+                          ],
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'LSL WHITE'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'ATL000311'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true
+                                }
+                              ]
                             }
                           ]
                         }
@@ -611,7 +655,6 @@
                   }
                 }
               ],
-              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
@@ -874,6 +917,76 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'C01-LHORCF'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'CAGE FREE'"
+                          }
+                        }
+                      ],
+                      "isToggled": true,
+                      "children": [
+                        {
+                          "identityValues": [
+                            {
+                              "Literal": {
+                                "Value": "'LHORCF2'"
+                              }
+                            }
+                          ],
+                          "isToggled": true,
+                          "children": [
+                            {
+                              "identityValues": [
+                                {
+                                  "Literal": {
+                                    "Value": "'HY BR'"
+                                  }
+                                }
+                              ],
+                              "isToggled": true,
+                              "children": [
+                                {
+                                  "identityValues": [
+                                    {
+                                      "Literal": {
+                                        "Value": "'LHORCF202'"
+                                      }
+                                    }
+                                  ],
+                                  "isToggled": true,
+                                  "children": [
+                                    {
+                                      "identityValues": [
+                                        {
+                                          "Literal": {
+                                            "Value": "25L"
+                                          }
+                                        }
+                                      ],
+                                      "isToggled": true
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -986,7 +1099,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "176.11384398808778D"
+                  "Value": "208.06279110314807D"
                 }
               }
             }
@@ -1092,7 +1205,7 @@
             "layout": {
               "expr": {
                 "Literal": {
-                  "Value": "'Tabular'"
+                  "Value": "'Compact'"
                 }
               }
             }
@@ -1988,6 +2101,13 @@
                   "Value": "false"
                 }
               }
+            },
+            "steppedLayoutIndentation": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
             }
           }
         }
@@ -2121,6 +2241,342 @@
             }
           ]
         }
+      },
+      {
+        "name": "5d2086ba57337470a97e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK"
+              }
+            },
+            "Property": "Farm No_"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7b71bff67f224f222ccc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK"
+              }
+            },
+            "Property": "Housing Type Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4ec9577faf0bb0bc5424",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK"
+              }
+            },
+            "Property": "Barn Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d6b3ed690baa9e122fe1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK"
+              }
+            },
+            "Property": "Strain Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "af915b9ded92c03df323",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK"
+              }
+            },
+            "Property": "No_"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "142ef0b065fb8afaf859",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "HILL_PBI_FLOCK_STD_Semana"
+              }
+            },
+            "Property": "Week of Life"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5b9e692bbe1331bd8923",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "% Total Occupied"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "80bf16d1b37342d292e3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Capacity"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "dbfeeb3316a2fd88669e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Qtty Birds"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "68370b572ae4021b3411",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Mortality"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0ce4af46fe82fbc932a7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Balance"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ca8bcd3a2959a0576a38",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "% Mortality"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c1aac87343c2a51d6812",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "STD Mortality Percent"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a083136b4f29d4cc5081",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Compair Mortality STD"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b9e6607206ebe1428d74",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Acum Mortality"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f4d9abc4e884fa9e5243",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Acum STD Mortality"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "71e7edc0c9abac1e06f0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Compair Acum Mortality STD"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "468e4f6a4dd3cb9aebd9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Qtty Eggs Standart"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "94aed0e8eaaba3e7d0c7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "% Qtty Eggs"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "423cbdd3606f03f838e5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "STD Eggs Percent"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1079b1d7204941fe3bd6",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Compair Qtty Eggs STD"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d78929ba9ea4f783543b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Qtty Eggs Doz"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d7a7d4582a1632f0fd6f",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measure"
+              }
+            },
+            "Property": "Qtty Eggs"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "16f71b606c56a9457d60",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar DAX"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

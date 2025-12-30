@@ -31,3 +31,7 @@ relationship cf2d8cb3-0316-2542-167f-a8bb01098890
 	fromColumn: HILL_PBI_FLOCK_STD_Semana.ID_Week
 	toColumn: HILL_PBI_FLOCK_STD_Day.ID_WEEK
 
+relationship 536af9a1-9a33-ad5a-79b5-bb9c3bed500a
+	fromColumn: HILL_PBI_FLOCK_ENTRY.'Posting Date'
+	toColumn: 'Calendar DAX'.Date
+

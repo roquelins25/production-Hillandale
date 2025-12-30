@@ -12607,18 +12607,78 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__measure.qtty_de_aves": {
+			    "entity__measure.qtty_birds": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measure",
-			          "ConceptualProperty": "Qtty de Aves"
+			          "ConceptualProperty": "Qtty Birds"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "qtty de aves": {
+			          "qtty birds": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtty nature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qtty animal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qtty plant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qtty birdy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "qtty fowl": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "qtty hen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
 			          }
 			        }
 			      ]
@@ -13830,98 +13890,28 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__measure.qtty_eggs": {
+			    "entity__measure.qtty_eggs_standart": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measure",
-			          "ConceptualProperty": "Qtty Eggs"
+			          "ConceptualProperty": "Qtty Eggs Standart"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "qtty eggs": {
+			          "qtty eggs standart": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "qtty offspring": {
-			            "Type": "Noun",
+			          "Qtty Eggs STD": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "qtty progeny": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "qtty frogspawn": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "qtty tadpole": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "qtty spawn": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "qtty seed": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "qtty ovum": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
-			          }
-			        },
-			        {
-			          "qtty ovule": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.475
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -14058,7 +14048,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__measure.qtty_eggs1": {
+			    "entity__measure.qtty_eggs": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measure",
@@ -15877,17 +15867,1271 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__measure.medida": {
+			    "entity__measure.qtty_eggs1": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measure",
-			          "ConceptualProperty": "Medida"
+			          "ConceptualProperty": "Qtty Eggs"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "medida": {
+			          "qtty eggs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtty offspring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qtty progeny": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qtty frogspawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qtty tadpole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qtty spawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qtty seed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qtty ovum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "qtty ovule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock.consider": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "HILL_PBI_FLOCK",
+			          "ConceptualProperty": "consider"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "consider": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__revenue_scenario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Revenue Scenario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_revenue scenario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ income scenario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "_ profit scenario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_ turnover scenario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_ yield scenario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "_revenue situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "_revenue setup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "_revenue development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "_revenue consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "_revenue state": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "_revenue set-up": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__max_QTT_eggs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Max QTT Eggs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_max QTT eggs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ maximum qtt egg": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "_max qtt offspring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_max qtt progeny": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_max qtt frogspawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_max qtt tadpole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_max qtt spawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "_max qtt seed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "_max qtt ovum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "_max qtt ovule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "Diff": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.first_birds_flock": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "First Birds Flock"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "first birds flock": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "flock": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "birds flock": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "first bird herd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "first bird drove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "first bird flight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "first bird group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "bird herd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bird drove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bird flight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bird group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "herd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "drove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "First Birds": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.mortality_grafic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "Mortality Grafic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mortality grafic": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__minx_grafic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Minx Grafic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_minx grafic": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "% Mortality": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.first_birds_flock_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "First Birds Flock Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "first birds flock number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "flock number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "birds flock number": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "first bird flock no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "bird flock no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "flock no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "acess": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "acess": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "acess.company": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess",
+			          "ConceptualProperty": "Company"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "company": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "co": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corp": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corporation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corps": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "enterprise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "conglomerate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "co inc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        }
+			      ]
+			    },
+			    "acess.email": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess",
+			          "ConceptualProperty": "Email"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "message": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "communication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "acess.password": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess",
+			          "ConceptualProperty": "Password"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "password": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "watchword": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "keyword": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "PIN": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "acess.indice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess",
+			          "ConceptualProperty": "Indice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indice": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "acess.password_acess": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Acess",
+			          "ConceptualProperty": "Password Acess"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "password acess": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "y_acess": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yAcess"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "y acess": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "yAcess": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.8613
+			          }
+			        }
+			      ]
+			    },
+			    "y_acess.y_acess": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yAcess",
+			          "ConceptualProperty": "yAcess"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "y acess": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yAcess": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "y_acess.valor_yAcess": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yAcess",
+			          "ConceptualProperty": "Valor yAcess"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor yAcess": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "yScenario_selection": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yScenario Selection"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yScenario selection": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yscenario assortment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario collection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario mixture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario medley": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario miscellany": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yscenario range": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "yscenario choice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "yScenario_selection.ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yScenario Selection",
+			          "ConceptualProperty": "ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "yScenario_selection.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yScenario Selection",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "yScenario_selection.display_name_alt_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "yScenario Selection",
+			          "ConceptualProperty": "Display Name Alt."
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "display name alt.": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "display nickname alt.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "display title alt.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "display label alt.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "display tag alt.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.compair_qtty_eggs_STD_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "Compair Qtty Eggs STD Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compair qtty eggs STD number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compair qtty egg std no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.compair_qtty_eggs_number_grafic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "Compair Qtty Eggs Number Grafic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compair qtty eggs number grafic": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "compair qtty egg no grafic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__compair_qtty_eggs_STD_number_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Compair Qtty Eggs STD Number FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_compair qtty eggs STD number FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__max_qtt_eggs_var": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Max Qtt Eggs Var"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_max qtt eggs var": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ maximum qtt egg var": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "% Var": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__compair_qtty_eggs_number_grafic_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measure",
+			          "ConceptualProperty": "_Compair Qtty Eggs Number Grafic FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_compair qtty eggs number grafic FormatString": {
 			            "State": "Generated"
 			          }
 			        }
@@ -15895,93 +17139,7 @@ cultureInfo pt-BR
 			    }
 			  },
 			  "Relationships": {
-			    "hill_pbi_strain_std_has_HILL_PBI_FLOCK_STD_semana": {
-			      "Binding": {
-			        "ConceptualEntity": "HILL_PBI_STRAIN_STD"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "hill_pbi_strain_std": {
-			          "Target": {
-			            "Entity": "hill_pbi_strain_std"
-			          }
-			        },
-			        "HILL_PBI_FLOCK_STD_semana": {
-			          "Target": {
-			            "Entity": "HILL_PBI_FLOCK_STD_semana"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "hill_pbi_strain_std"
-			            },
-			            "Object": {
-			              "Role": "HILL_PBI_FLOCK_STD_semana"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hill_pbi_strain_stds_have_HILL_PBI_FLOCK_STD_semanas"
-			        }
-			      ]
-			    },
-			    "hill_pbi_flock_has_hill_pbi_barn_layout": {
-			      "Binding": {
-			        "ConceptualEntity": "HILL_PBI_FLOCK"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "hill_pbi_flock": {
-			          "Target": {
-			            "Entity": "hill_pbi_flock"
-			          }
-			        },
-			        "hill_pbi_barn_layout": {
-			          "Target": {
-			            "Entity": "hill_pbi_barn_layout"
-			          },
-			          "Nouns": [
-			            {
-			              "layout": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "hill_pbi_flock"
-			            },
-			            "Object": {
-			              "Role": "hill_pbi_barn_layout"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hill_pbi_flocks_have_hill_pbi_barn_layouts"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "hill_pbi_barn_layout"
-			            },
-			            "Object": {
-			              "Role": "hill_pbi_flock"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hill_pbi_barn_layouts_have_hill_pbi_flocks"
-			        }
-			      ]
-			    },
-			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_medida": {
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_entity__max_qtt_eggs_var": {
 			      "Binding": {
 			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
 			      },
@@ -15992,9 +17150,9 @@ cultureInfo pt-BR
 			            "Entity": "HILL_PBI_FLOCK_STD_day"
 			          }
 			        },
-			        "entity__measure.medida": {
+			        "entity__measure.entity__max_qtt_eggs_var": {
 			          "Target": {
-			            "Entity": "entity__measure.medida"
+			            "Entity": "entity__measure.entity__max_qtt_eggs_var"
 			          }
 			        }
 			      },
@@ -16005,12 +17163,830 @@ cultureInfo pt-BR
 			              "Role": "HILL_PBI_FLOCK_STD_day"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.medida"
+			              "Role": "entity__measure.entity__max_qtt_eggs_var"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HILL_PBI_FLOCK_STD_days_have_medida"
+			          "ID": "HILL_PBI_FLOCK_STD_days_have__max_qtt_eggs_var"
+			        }
+			      ]
+			    },
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_compair_qtty_eggs_number_grafic": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HILL_PBI_FLOCK_STD_day": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_day"
+			          }
+			        },
+			        "entity__measure.compair_qtty_eggs_number_grafic": {
+			          "Target": {
+			            "Entity": "entity__measure.compair_qtty_eggs_number_grafic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HILL_PBI_FLOCK_STD_day"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.compair_qtty_eggs_number_grafic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HILL_PBI_FLOCK_STD_days_have_compair_qtty_eggs_number_grafic"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_compair_qtty_eggs_number_grafic": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.compair_qtty_eggs_number_grafic": {
+			          "Target": {
+			            "Entity": "entity__measure.compair_qtty_eggs_number_grafic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.compair_qtty_eggs_number_grafic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_compair_qtty_eggs_number_grafic"
+			        }
+			      ]
+			    },
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_compair_qtty_eggs_STD_number": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HILL_PBI_FLOCK_STD_day": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_day"
+			          }
+			        },
+			        "entity__measure.compair_qtty_eggs_STD_number": {
+			          "Target": {
+			            "Entity": "entity__measure.compair_qtty_eggs_STD_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HILL_PBI_FLOCK_STD_day"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.compair_qtty_eggs_STD_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HILL_PBI_FLOCK_STD_days_have_compair_qtty_eggs_STD_number"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_compair_qtty_eggs_STD_number": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.compair_qtty_eggs_STD_number": {
+			          "Target": {
+			            "Entity": "entity__measure.compair_qtty_eggs_STD_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.compair_qtty_eggs_STD_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_compair_qtty_eggs_STD_number"
+			        }
+			      ]
+			    },
+			    "yScenario_selection_has_display_name_alt_": {
+			      "Binding": {
+			        "ConceptualEntity": "yScenario Selection"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "yScenario_selection": {
+			          "Target": {
+			            "Entity": "yScenario_selection"
+			          }
+			        },
+			        "yScenario_selection.display_name_alt_": {
+			          "Target": {
+			            "Entity": "yScenario_selection.display_name_alt_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "yScenario_selection"
+			            },
+			            "Object": {
+			              "Role": "yScenario_selection.display_name_alt_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "yScenario_selections_have_display_name_alt_"
+			        }
+			      ]
+			    },
+			    "yScenario_selection_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "yScenario Selection"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "yScenario_selection": {
+			          "Target": {
+			            "Entity": "yScenario_selection"
+			          }
+			        },
+			        "yScenario_selection.name": {
+			          "Target": {
+			            "Entity": "yScenario_selection.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "yScenario_selection"
+			            },
+			            "Object": {
+			              "Role": "yScenario_selection.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "yScenario_selections_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "yScenario_selection"
+			            },
+			            "Name": {
+			              "Role": "yScenario_selection.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_yScenario_selections"
+			        }
+			      ]
+			    },
+			    "yScenario_selection_has_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "yScenario Selection"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "yScenario_selection": {
+			          "Target": {
+			            "Entity": "yScenario_selection"
+			          }
+			        },
+			        "yScenario_selection.ID": {
+			          "Target": {
+			            "Entity": "yScenario_selection.ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "yScenario_selection"
+			            },
+			            "Object": {
+			              "Role": "yScenario_selection.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "yScenario_selections_have_ID"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "yScenario_selection"
+			            },
+			            "Name": {
+			              "Role": "yScenario_selection.ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ID_are_names_IDs_of_yScenario_selections"
+			        }
+			      ]
+			    },
+			    "y_acess_has_valor_yAcess": {
+			      "Binding": {
+			        "ConceptualEntity": "yAcess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "y_acess": {
+			          "Target": {
+			            "Entity": "y_acess"
+			          }
+			        },
+			        "y_acess.valor_yAcess": {
+			          "Target": {
+			            "Entity": "y_acess.valor_yAcess"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "y_acess"
+			            },
+			            "Object": {
+			              "Role": "y_acess.valor_yAcess"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "y_acesses_have_valor_yAcess"
+			        }
+			      ]
+			    },
+			    "y_acess_has_y_acess": {
+			      "Binding": {
+			        "ConceptualEntity": "yAcess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "y_acess": {
+			          "Target": {
+			            "Entity": "y_acess"
+			          }
+			        },
+			        "y_acess.y_acess": {
+			          "Target": {
+			            "Entity": "y_acess.y_acess"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "y_acess"
+			            },
+			            "Object": {
+			              "Role": "y_acess.y_acess"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "y_acesses_have_y_acesses"
+			        }
+			      ]
+			    },
+			    "y_acess_has_acess_password_acess": {
+			      "Binding": {
+			        "ConceptualEntity": "yAcess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "y_acess": {
+			          "Target": {
+			            "Entity": "y_acess"
+			          }
+			        },
+			        "acess.password_acess": {
+			          "Target": {
+			            "Entity": "acess.password_acess"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "y_acess"
+			            },
+			            "Object": {
+			              "Role": "acess.password_acess"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "y_acesses_have_password_acess"
+			        }
+			      ]
+			    },
+			    "acess_has_password_acess": {
+			      "Binding": {
+			        "ConceptualEntity": "Acess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "acess": {
+			          "Target": {
+			            "Entity": "acess"
+			          }
+			        },
+			        "acess.password_acess": {
+			          "Target": {
+			            "Entity": "acess.password_acess"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "acess"
+			            },
+			            "Object": {
+			              "Role": "acess.password_acess"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acesses_have_password_acess"
+			        }
+			      ]
+			    },
+			    "acess_has_indice": {
+			      "Binding": {
+			        "ConceptualEntity": "Acess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "acess": {
+			          "Target": {
+			            "Entity": "acess"
+			          }
+			        },
+			        "acess.indice": {
+			          "Target": {
+			            "Entity": "acess.indice"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "acess"
+			            },
+			            "Object": {
+			              "Role": "acess.indice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acesses_have_indices"
+			        }
+			      ]
+			    },
+			    "acess_has_password": {
+			      "Binding": {
+			        "ConceptualEntity": "Acess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "acess": {
+			          "Target": {
+			            "Entity": "acess"
+			          }
+			        },
+			        "acess.password": {
+			          "Target": {
+			            "Entity": "acess.password"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "acess"
+			            },
+			            "Object": {
+			              "Role": "acess.password"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acesses_have_passwords"
+			        }
+			      ]
+			    },
+			    "acess_has_email": {
+			      "Binding": {
+			        "ConceptualEntity": "Acess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "acess": {
+			          "Target": {
+			            "Entity": "acess"
+			          }
+			        },
+			        "acess.email": {
+			          "Target": {
+			            "Entity": "acess.email"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "acess"
+			            },
+			            "Object": {
+			              "Role": "acess.email"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acesses_have_emails"
+			        }
+			      ]
+			    },
+			    "acess_has_company": {
+			      "Binding": {
+			        "ConceptualEntity": "Acess"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "acess": {
+			          "Target": {
+			            "Entity": "acess"
+			          }
+			        },
+			        "acess.company": {
+			          "Target": {
+			            "Entity": "acess.company"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "acess"
+			            },
+			            "Object": {
+			              "Role": "acess.company"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "acesses_have_companies"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_first_birds_flock_number": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.first_birds_flock_number": {
+			          "Target": {
+			            "Entity": "entity__measure.first_birds_flock_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.first_birds_flock_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_first_birds_flock_number"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_entity__minx_grafic": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.entity__minx_grafic": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__minx_grafic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__minx_grafic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have__minx_grafic"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_mortality_grafic": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.mortality_grafic": {
+			          "Target": {
+			            "Entity": "entity__measure.mortality_grafic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.mortality_grafic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_mortality_grafic"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_first_birds_flock": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.first_birds_flock": {
+			          "Target": {
+			            "Entity": "entity__measure.first_birds_flock"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.first_birds_flock"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_first_birds_flock"
+			        }
+			      ]
+			    },
+			    "HILL_PBI_FLOCK_STD_semana_has_entity__measure_entity__max_QTT_eggs": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HILL_PBI_FLOCK_STD_semana": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_semana"
+			          }
+			        },
+			        "entity__measure.entity__max_QTT_eggs": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__max_QTT_eggs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HILL_PBI_FLOCK_STD_semana"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__max_QTT_eggs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HILL_PBI_FLOCK_STD_semanas_have__max_QTT_eggs"
+			        }
+			      ]
+			    },
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_entity__max_QTT_eggs": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HILL_PBI_FLOCK_STD_day": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_day"
+			          }
+			        },
+			        "entity__measure.entity__max_QTT_eggs": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__max_QTT_eggs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HILL_PBI_FLOCK_STD_day"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__max_QTT_eggs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HILL_PBI_FLOCK_STD_days_have__max_QTT_eggs"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_entity__revenue_scenario": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measure"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.entity__revenue_scenario": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__revenue_scenario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__revenue_scenario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have__revenue_scenario"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_has_consider": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock"
+			          }
+			        },
+			        "hill_pbi_flock.consider": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock.consider"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock"
+			            },
+			            "Object": {
+			              "Role": "hill_pbi_flock.consider"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flocks_have_consider"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_qtty_eggs1": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.qtty_eggs1": {
+			          "Target": {
+			            "Entity": "entity__measure.qtty_eggs1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.qtty_eggs1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_qtty_eggs"
 			        }
 			      ]
 			    },
@@ -16176,6 +18152,39 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "HILL_PBI_FLOCK_STD_days_have_iep"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_iep": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.iep": {
+			          "Target": {
+			            "Entity": "entity__measure.iep"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.iep"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_iep"
 			        }
 			      ]
 			    },
@@ -17202,15 +19211,48 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_qtty_eggs_doz": {
+			    "hill_pbi_flock_entry_has_entity__measure_compair_qtty_eggs_STD": {
 			      "Binding": {
-			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "HILL_PBI_FLOCK_STD_day": {
+			        "hill_pbi_flock_entry": {
 			          "Target": {
-			            "Entity": "HILL_PBI_FLOCK_STD_day"
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.compair_qtty_eggs_STD": {
+			          "Target": {
+			            "Entity": "entity__measure.compair_qtty_eggs_STD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.compair_qtty_eggs_STD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have_compair_qtty_eggs_STD"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_qtty_eggs_doz": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
 			          }
 			        },
 			        "entity__measure.qtty_eggs_doz": {
@@ -17223,7 +19265,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "HILL_PBI_FLOCK_STD_day"
+			              "Role": "hill_pbi_flock_entry"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.qtty_eggs_doz"
@@ -17231,11 +19273,11 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HILL_PBI_FLOCK_STD_days_have_qtty_eggs_doz"
+			          "ID": "hill_pbi_flock_entries_have_qtty_eggs_doz"
 			        }
 			      ]
 			    },
-			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_qtty_eggs1": {
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_qtty_eggs": {
 			      "Binding": {
 			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
 			      },
@@ -17246,9 +19288,9 @@ cultureInfo pt-BR
 			            "Entity": "HILL_PBI_FLOCK_STD_day"
 			          }
 			        },
-			        "entity__measure.qtty_eggs1": {
+			        "entity__measure.qtty_eggs": {
 			          "Target": {
-			            "Entity": "entity__measure.qtty_eggs1"
+			            "Entity": "entity__measure.qtty_eggs"
 			          }
 			        }
 			      },
@@ -17259,12 +19301,45 @@ cultureInfo pt-BR
 			              "Role": "HILL_PBI_FLOCK_STD_day"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.qtty_eggs1"
+			              "Role": "entity__measure.qtty_eggs"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "HILL_PBI_FLOCK_STD_days_have__qtty_eggs"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_entry_has_entity__measure_qtty_eggs": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock_entry": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock_entry"
+			          }
+			        },
+			        "entity__measure.qtty_eggs": {
+			          "Target": {
+			            "Entity": "entity__measure.qtty_eggs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock_entry"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.qtty_eggs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flock_entries_have__qtty_eggs"
 			        }
 			      ]
 			    },
@@ -17334,7 +19409,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_qtty_eggs": {
+			    "HILL_PBI_FLOCK_STD_day_has_entity__measure_qtty_eggs_standart": {
 			      "Binding": {
 			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
 			      },
@@ -17345,9 +19420,9 @@ cultureInfo pt-BR
 			            "Entity": "HILL_PBI_FLOCK_STD_day"
 			          }
 			        },
-			        "entity__measure.qtty_eggs": {
+			        "entity__measure.qtty_eggs_standart": {
 			          "Target": {
-			            "Entity": "entity__measure.qtty_eggs"
+			            "Entity": "entity__measure.qtty_eggs_standart"
 			          }
 			        }
 			      },
@@ -17358,12 +19433,12 @@ cultureInfo pt-BR
 			              "Role": "HILL_PBI_FLOCK_STD_day"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.qtty_eggs"
+			              "Role": "entity__measure.qtty_eggs_standart"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "HILL_PBI_FLOCK_STD_days_have_qtty_eggs"
+			          "ID": "HILL_PBI_FLOCK_STD_days_have_qtty_eggs_standart"
 			        }
 			      ]
 			    },
@@ -17928,7 +20003,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "entity__measure_has_qtty_de_aves": {
+			    "entity__measure_has_qtty_birds": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measure"
 			      },
@@ -17939,9 +20014,9 @@ cultureInfo pt-BR
 			            "Entity": "entity__measure"
 			          }
 			        },
-			        "entity__measure.qtty_de_aves": {
+			        "entity__measure.qtty_birds": {
 			          "Target": {
-			            "Entity": "entity__measure.qtty_de_aves"
+			            "Entity": "entity__measure.qtty_birds"
 			          }
 			        }
 			      },
@@ -17952,12 +20027,12 @@ cultureInfo pt-BR
 			              "Role": "entity__measure"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.qtty_de_aves"
+			              "Role": "entity__measure.qtty_birds"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "Phrasing_measures_have_qtty_de_aves"
+			          "ID": "Phrasing_measures_have_qtty_birds"
 			        }
 			      ]
 			    },
@@ -24334,6 +26409,125 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
+			    "HILL_PBI_FLOCK_STD_semana_has_entity__measure_entity__max_qtt_eggs_var": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "HILL_PBI_FLOCK_STD_semana": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_semana"
+			          }
+			        },
+			        "entity__measure.entity__max_qtt_eggs_var": {
+			          "Target": {
+			            "Entity": "entity__measure.entity__max_qtt_eggs_var"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "HILL_PBI_FLOCK_STD_semana"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.entity__max_qtt_eggs_var"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "HILL_PBI_FLOCK_STD_semanas_have__max_qtt_eggs_var"
+			        }
+			      ]
+			    },
+			    "hill_pbi_flock_has_hill_pbi_barn_layout": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_FLOCK"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_flock": {
+			          "Target": {
+			            "Entity": "hill_pbi_flock"
+			          }
+			        },
+			        "hill_pbi_barn_layout": {
+			          "Target": {
+			            "Entity": "hill_pbi_barn_layout"
+			          },
+			          "Nouns": [
+			            {
+			              "layout": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_flock"
+			            },
+			            "Object": {
+			              "Role": "hill_pbi_barn_layout"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_flocks_have_hill_pbi_barn_layouts"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_barn_layout"
+			            },
+			            "Object": {
+			              "Role": "hill_pbi_flock"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_barn_layouts_have_hill_pbi_flocks"
+			        }
+			      ]
+			    },
+			    "hill_pbi_strain_std_has_HILL_PBI_FLOCK_STD_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "HILL_PBI_STRAIN_STD"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hill_pbi_strain_std": {
+			          "Target": {
+			            "Entity": "hill_pbi_strain_std"
+			          }
+			        },
+			        "HILL_PBI_FLOCK_STD_semana": {
+			          "Target": {
+			            "Entity": "HILL_PBI_FLOCK_STD_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hill_pbi_strain_std"
+			            },
+			            "Object": {
+			              "Role": "HILL_PBI_FLOCK_STD_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hill_pbi_strain_stds_have_HILL_PBI_FLOCK_STD_semanas"
+			        }
+			      ]
+			    },
 			    "hill_pbi_flock_entry_has_HILL_PBI_FLOCK_STD_semana": {
 			      "Binding": {
 			        "ConceptualEntity": "HILL_PBI_FLOCK_ENTRY"
@@ -24496,52 +26690,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "HILL_PBI_FLOCK_STD_semanas_have_HILL_PBI_FLOCK_STD_days"
-			        }
-			      ]
-			    },
-			    "HILL_PBI_FLOCK_STD_day_has_calendar_DAX": {
-			      "Binding": {
-			        "ConceptualEntity": "HILL_PBI_FLOCK_STD_Day"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "HILL_PBI_FLOCK_STD_day": {
-			          "Target": {
-			            "Entity": "HILL_PBI_FLOCK_STD_day"
-			          }
-			        },
-			        "calendar_DAX": {
-			          "Target": {
-			            "Entity": "calendar_DAX"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "HILL_PBI_FLOCK_STD_day"
-			            },
-			            "Object": {
-			              "Role": "calendar_DAX"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "HILL_PBI_FLOCK_STD_days_have_calendar_DAX"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar_DAX"
-			            },
-			            "Object": {
-			              "Role": "HILL_PBI_FLOCK_STD_day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "calendar_DAX_have_HILL_PBI_FLOCK_STD_days"
 			        }
 			      ]
 			    }
