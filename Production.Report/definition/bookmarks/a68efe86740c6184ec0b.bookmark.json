@@ -1,0 +1,2855 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Pg1 - Mortality",
+  "name": "a68efe86740c6184ec0b",
+  "options": {
+    "targetVisualNames": [],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "c320e89f6eecc65bdda0",
+    "sections": {
+      "c320e89f6eecc65bdda0": {
+        "filters": {
+          "byExpr": [
+            {
+              "name": "d9a8c7d968b6d8bc7657",
+              "type": "Categorical",
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "h",
+                    "Entity": "HILL_PBI_FLOCK",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Not": {
+                        "Expression": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "h"
+                                    }
+                                  },
+                                  "Property": "Order Company Name"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "null"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "HILL_PBI_FLOCK"
+                    }
+                  },
+                  "Property": "Order Company Name"
+                }
+              },
+              "howCreated": 1
+            }
+          ]
+        },
+        "visualContainers": {
+          "02568b552d2aedc8ecfc": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0653f280066bae0bbca0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Qtty Eggs STD"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "gauge",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Qtty Eggs STD"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "298f6d015a491f7cbe65": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ae7ad02eb8997e473940",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Company"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ee6334ad720679d3800e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Standart"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "828f900e78d708543a4d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "STD Eggs Qtty"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ef466ca96a97003873b0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Qtty Eggs STD"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Qtty Eggs STD"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Company"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "3a5b0242a3290db6ec15": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "72a5a69507452aa0d555",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "IEP"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "gauge",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "IEP"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "79529190fe847cab42d3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6b52e9862a2c8f728cfb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9c7ab3668b9aa6ef3ea6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Birds"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5948f01ab3e05e52c86c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "_Minx Grafic"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6074f88c780a465c77de",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "First Birds Flock"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7c93ce8a47eb70e3b236": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bd7c1370016c6874d8ca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Housing Type Code"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "h",
+                                "Entity": "HILL_PBI_FLOCK",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "Not": {
+                                    "Expression": {
+                                      "In": {
+                                        "Expressions": [
+                                          {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "h"
+                                                }
+                                              },
+                                              "Property": "Housing Type Code"
+                                            }
+                                          }
+                                        ],
+                                        "Values": [
+                                          [
+                                            {
+                                              "Literal": {
+                                                "Value": "'PULLET'"
+                                              }
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Housing Type Code"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8a706c7d6e71e7b34215": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "73b04be0b6c7001b0472",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar DAX"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9843adfe0bb71660d482",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar DAX"
+                        }
+                      },
+                      "Property": "Year-Month"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "c",
+                                "Entity": "Calendar DAX",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "c"
+                                            }
+                                          },
+                                          "Property": "Year"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "2025L"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar DAX"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar DAX"
+                        }
+                      },
+                      "Property": "Year-Month"
+                    }
+                  }
+                ]
+              },
+              "cachedFilterDisplayItems": [
+                {
+                  "id": {
+                    "scopeId": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Calendar DAX"
+                              }
+                            },
+                            "Property": "Year"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "2025L"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "displayName": "2025"
+                }
+              ],
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Values"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "Calendar DAX.Year"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Calendar DAX"
+                              }
+                            },
+                            "Property": "Year"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Calendar DAX.Year-Month"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": [],
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "2025L"
+                            }
+                          }
+                        ],
+                        "isToggled": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "8cf73f35885d9cb79cc1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4e5c7c85c5300d554e14",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1759c4707c147130206e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Acum Mortality STD"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "967c3d2a301d37e4a014",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Acum Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f3b6875d01e383c414b9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Acum STD Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "a01ec3c654fdcf51a984": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a3b8a8fe0dca099934b7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "706690fd86431ca09805",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Standart"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c2d7277713ca4949cb8c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Birds"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "557e6b35d08c0754e006",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9ae6fc815946ec7ad46d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "STD Mortality Percent"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "a46ebdec3392d008c043": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4984ceca0e567e2d1405",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "No_"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "No_"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a5447f9ff4e6ab34c3b4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b700a9ea68604ca5084d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "h",
+                                "Entity": "HILL_PBI_FLOCK_STD_Semana",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "And": {
+                                    "Left": {
+                                      "Comparison": {
+                                        "ComparisonKind": 2,
+                                        "Left": {
+                                          "Column": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Source": "h"
+                                              }
+                                            },
+                                            "Property": "Week of Life"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": {
+                                            "Value": "17D"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "Right": {
+                                      "Comparison": {
+                                        "ComparisonKind": 4,
+                                        "Left": {
+                                          "Column": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Source": "h"
+                                              }
+                                            },
+                                            "Property": "Week of Life"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": {
+                                            "Value": "100D"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "numericStart": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "17D"
+                            }
+                          }
+                        },
+                        "numericEnd": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "100D"
+                            }
+                          }
+                        },
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "be5a94c76f126c10ae1d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6e12e20b826e380e4616",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Total Occupied"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "gauge",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Total Occupied"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "d888e8e5644e107027d2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "df1bb111ac9aaa92d9d5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Company"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "55ffe1e1a6383e4e54d6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Total Occupied"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Total Occupied"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Company"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e270edf15bc8526d6457": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2688008eeb87701b0501",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "36aa33e03032476522ec",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Standart"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4187de60d10b4784d70c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Birds"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ee8ea8f0ba690706304e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Qtty Eggs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0f765f13443e8e0440c5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "STD Eggs Percent"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "ea267df809aca00ade5a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "74d23d60661d0b7cbbec",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "h",
+                        "Entity": "HILL_PBI_FLOCK",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "h"
+                                        }
+                                      },
+                                      "Property": "Order Company Name"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Order Company Name"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5d2086ba57337470a97e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Farm No_"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7b71bff67f224f222ccc",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Housing Type Code"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4ec9577faf0bb0bc5424",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Barn Code"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d6b3ed690baa9e122fe1",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Strain Code"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "af915b9ded92c03df323",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "No_"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "142ef0b065fb8afaf859",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5b9e692bbe1331bd8923",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Total Occupied"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "80bf16d1b37342d292e3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Capacity"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "dbfeeb3316a2fd88669e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Birds"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "68370b572ae4021b3411",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0ce4af46fe82fbc932a7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Balance"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ca8bcd3a2959a0576a38",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c1aac87343c2a51d6812",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "STD Mortality Percent"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a083136b4f29d4cc5081",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Mortality STD"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b9e6607206ebe1428d74",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Acum Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f4d9abc4e884fa9e5243",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Acum STD Mortality"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "71e7edc0c9abac1e06f0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Acum Mortality STD"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "468e4f6a4dd3cb9aebd9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Standart"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "94aed0e8eaaba3e7d0c7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "% Qtty Eggs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "423cbdd3606f03f838e5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "STD Eggs Percent"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1079b1d7204941fe3bd6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Compair Qtty Eggs STD"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d78929ba9ea4f783543b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Doz"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d7a7d4582a1632f0fd6f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "16f71b606c56a9457d60",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar DAX"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Order Company Name"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Farm No_"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Housing Type Code"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Barn Code"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Strain Code"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "No_"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.Order Company Name"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "Order Company Name"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.Farm No_"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "Farm No_"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.Housing Type Code"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "Housing Type Code"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.Barn Code"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "Barn Code"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.Strain Code"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "Strain Code"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK.No_"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK"
+                              }
+                            },
+                            "Property": "No_"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "HILL_PBI_FLOCK_STD_Semana.Week of Life"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                              }
+                            },
+                            "Property": "Week of Life"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "Calendar DAX.Date"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": [],
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'02 Hillandale Farms Atlantic'"
+                            }
+                          }
+                        ],
+                        "isToggled": true,
+                        "children": [
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'02-ATL'"
+                                }
+                              }
+                            ],
+                            "isToggled": true,
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGE FREE'"
+                                    }
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'ATLCF01'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'HY BR'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGED'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true,
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'ATL00A3'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'LSL WHITE'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'02-ATLPUL'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          }
+                        ]
+                      },
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "'01 Hillandale Gettysburg LP'"
+                            }
+                          }
+                        ],
+                        "children": [
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'01-GTY3'"
+                                }
+                              }
+                            ],
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGED'"
+                                    }
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'GB00315'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'W-36'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'GB0031501'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'GB00313'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'DKLW'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'GB031302'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGE FREE'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true,
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'GBCF302'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'LSL WHITE'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'GBCF30201'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'C01-DBOWCF'"
+                                }
+                              }
+                            ],
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'FREE RANGE'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true,
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'DBOWCF2'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'HY BR'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'DBOWCF202'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true,
+                                            "children": [
+                                              {
+                                                "identityValues": [
+                                                  {
+                                                    "Literal": {
+                                                      "Value": "25L"
+                                                    }
+                                                  }
+                                                ],
+                                                "isToggled": true
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'C01P-BLECF'"
+                                }
+                              }
+                            ],
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGE FREE'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true,
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'BLEICF2'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'HY BR'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'BLECF202'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'C01-LHORCF'"
+                                }
+                              }
+                            ],
+                            "isToggled": true,
+                            "children": [
+                              {
+                                "identityValues": [
+                                  {
+                                    "Literal": {
+                                      "Value": "'CAGE FREE'"
+                                    }
+                                  }
+                                ],
+                                "isToggled": true,
+                                "children": [
+                                  {
+                                    "identityValues": [
+                                      {
+                                        "Literal": {
+                                          "Value": "'LHORCF2'"
+                                        }
+                                      }
+                                    ],
+                                    "isToggled": true,
+                                    "children": [
+                                      {
+                                        "identityValues": [
+                                          {
+                                            "Literal": {
+                                              "Value": "'HY BR'"
+                                            }
+                                          }
+                                        ],
+                                        "isToggled": true,
+                                        "children": [
+                                          {
+                                            "identityValues": [
+                                              {
+                                                "Literal": {
+                                                  "Value": "'LHORCF202'"
+                                                }
+                                              }
+                                            ],
+                                            "isToggled": true,
+                                            "children": [
+                                              {
+                                                "identityValues": [
+                                                  {
+                                                    "Literal": {
+                                                      "Value": "25L"
+                                                    }
+                                                  }
+                                                ],
+                                                "isToggled": true
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "ee135b9cdade16f7d68c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "873b4736e8ad76e16653",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "StatusName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "h",
+                                "Entity": "HILL_PBI_FLOCK",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "h"
+                                            }
+                                          },
+                                          "Property": "StatusName"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'Released'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "StatusName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "effa121bbda34ded9623": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7cf3c6653056ba124300",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Order Company Name"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "Order Company Name"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f39ad6f14f2da690c44c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6a5091574d5e2d5acffe",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7a9e6e81de4d6503add2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "Qtty Eggs Standart"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "580c86f7e32cdb7f70fd",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "_Max QTT Eggs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1e504e543a162329d9d2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "70e7b51b3ada7c7090ed",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measure"
+                        }
+                      },
+                      "Property": "_Max Qtt Eggs Var"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineClusteredColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Day"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK_STD_Semana"
+                        }
+                      },
+                      "Property": "Week of Life"
+                    }
+                  }
+                ]
+              },
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "f76a8236b2f5363e1300": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b02a77090014abd4782c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "consider"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "h",
+                                "Entity": "HILL_PBI_FLOCK",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "h"
+                                            }
+                                          },
+                                          "Property": "consider"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "null"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "consider"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "HILL_PBI_FLOCK"
+                        }
+                      },
+                      "Property": "consider"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              },
+              "visible": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

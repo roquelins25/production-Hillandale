@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "b7d1f87584acd823a794",
+  "name": "e80bd5c20b80be958900",
   "position": {
-    "x": 748.06340454858719,
-    "y": 565.45830461750518,
-    "z": 2,
-    "height": 33.52170916609235,
-    "width": 128.79393521709167
+    "x": 191.1764705882353,
+    "y": 442.94117647058823,
+    "z": 16003,
+    "height": 23.529411764705884,
+    "width": 88.235294117647058
   },
   "visual": {
     "visualType": "actionButton",
@@ -66,26 +66,14 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'PageNavigation'"
+                  "Value": "'Bookmark'"
                 }
               }
             },
-            "showDefaultTooltip": {
+            "bookmark": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "navigationSection": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Acess"
-                    }
-                  },
-                  "Property": "Password Acess"
+                  "Value": "'538e360780d36bbc2659'"
                 }
               }
             }

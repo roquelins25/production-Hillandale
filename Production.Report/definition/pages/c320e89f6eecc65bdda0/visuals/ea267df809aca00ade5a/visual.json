@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "ea267df809aca00ade5a",
   "position": {
-    "x": 94,
-    "y": 840,
+    "x": 87,
+    "y": 836,
     "z": 7000,
     "height": 788,
     "width": 1164,
@@ -43,7 +43,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Farm No_",
               "nativeQueryRef": "Farm No_",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -58,7 +58,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Housing Type Code",
               "nativeQueryRef": "Housing Type Code",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -73,7 +73,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Barn Code",
               "nativeQueryRef": "Barn Code",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -88,7 +88,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.Strain Code",
               "nativeQueryRef": "Strain Code",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -103,7 +103,7 @@
               },
               "queryRef": "HILL_PBI_FLOCK.No_",
               "nativeQueryRef": "No_",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -545,6 +545,7 @@
                   }
                 }
               ],
+              "isToggled": true,
               "children": [
                 {
                   "identityValues": [
@@ -554,6 +555,7 @@
                       }
                     }
                   ],
+                  "isToggled": true,
                   "children": [
                     {
                       "identityValues": [
@@ -606,6 +608,7 @@
                               }
                             }
                           ],
+                          "isToggled": true,
                           "children": [
                             {
                               "identityValues": [
@@ -615,19 +618,7 @@
                                   }
                                 }
                               ],
-                              "isToggled": true,
-                              "children": [
-                                {
-                                  "identityValues": [
-                                    {
-                                      "Literal": {
-                                        "Value": "'ATL000311'"
-                                      }
-                                    }
-                                  ],
-                                  "isToggled": true
-                                }
-                              ]
+                              "isToggled": true
                             }
                           ]
                         }

@@ -46,6 +46,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "advanceCardE03760C5AB684758B56AA29F9E6C257B"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -63,11 +66,6 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "PG_76504735323533767.png",
-          "path": "PG_76504735323533767.png",
-          "type": "Image"
-        },
-        {
           "name": "Password_Incorrect09564916241961985.png",
           "path": "Password_Incorrect09564916241961985.png",
           "type": "Image"
@@ -75,6 +73,11 @@
         {
           "name": "Login9066439964325714.png",
           "path": "Login9066439964325714.png",
+          "type": "Image"
+        },
+        {
+          "name": "PG_747163634635512686.png",
+          "path": "PG_747163634635512686.png",
           "type": "Image"
         }
       ]

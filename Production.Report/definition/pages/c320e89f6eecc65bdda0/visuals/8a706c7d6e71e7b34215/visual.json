@@ -139,16 +139,6 @@
                               },
                               "Property": "Year"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "c"
-                                }
-                              },
-                              "Property": "Year-Month"
-                            }
                           }
                         ],
                         "Values": [
@@ -156,11 +146,6 @@
                             {
                               "Literal": {
                                 "Value": "2025L"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'Dec-2025'"
                               }
                             }
                           ]
@@ -179,16 +164,6 @@
                               },
                               "Property": "Year"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "Calendar DAX"
-                                }
-                              },
-                              "Property": "Year-Month"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -199,15 +174,6 @@
                                   {
                                     "Literal": {
                                       "Value": "2025L"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'Dec-2025'"
                                     }
                                   }
                                 ]
@@ -226,25 +192,12 @@
                                   "Property": "Year"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "Calendar DAX"
-                                    }
-                                  },
-                                  "Property": "Year-Month"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "2025",
-                            "1": "Dec-2025"
+                            "0": "2025"
                           }
                         ]
                       }
